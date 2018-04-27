@@ -1,0 +1,4 @@
+nombre, correo, contrasena
+p1, p1@p.com, 123
+p2, p2@p.com, 456
+p3, p3@p.com, 789
