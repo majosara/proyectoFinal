@@ -1,0 +1,3 @@
+nombre, edad, correo
+Maria, 17, majosara2000@gmail.com
+Juan, 27, pablo.giron@javerianacali.edu.co

@@ -1,0 +1,1 @@
+id_estudiante, vidas, id_juego, puntos
