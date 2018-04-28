@@ -1,0 +1,1 @@
+id_pregunta, id_respuesta, indice_respuesta_correcta

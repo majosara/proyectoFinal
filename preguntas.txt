@@ -1,15 +1,11 @@
-Preguntas para el juego Check you!
-Preescolar:
-1. ¿Cuál es la vocal que le sigue a la "e"?
-2. ¿Cuál de los siguientes es un sentimiento?
-a. Amor.
-b. Respeto.
-c. Silencio.
-d. Ninguno.
-3. ¿Cuántas son las vocales?
+id_pregunta, materia, curso, pregunta:
+ , español, preescolar, ¿Cuál es la vocal que le sigue a la "e"?
+2. Si mezclo azul y amarillo, ¿qué color obtengo?
+ , español, preescolar, ¿Cuántas son las vocales?
 4. Si tengo tres manzanas y le regalo una a mi amigo, ¿cuántas me quedan?
+5. ¿Cuántos son los colores primarios?
 
-Primero:
-1. ¿Cuántas letras tiene el abecedario?
-2. ¿Qué letra sigue después de la "v" en el abecedario?
-3. ¿Cuánto es 1 x 0?
+ , español, primero, ¿Cuántas letras tiene el abecedario?
+ , español, primero, ¿Qué letra sigue después de la "v" en el abecedario?
+
+ , matemática, primero, ¿Cuánto es 1 x 0?
