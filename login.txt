@@ -1,1 +1,3 @@
 correo, contraseña
+maria@mail.com, 1234
+robin@mail.com, 4321
