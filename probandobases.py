@@ -1,4 +1,4 @@
-f = open('datos_estudiantes.txt')
+f = open('ejemplo_datos.txt')
 l = []
 for linea in f:
     linea = linea.replace('\n', ' ')
