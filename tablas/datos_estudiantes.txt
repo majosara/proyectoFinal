@@ -1,0 +1,6 @@
+id_estudiante, nombre, edad, curso
+ , Robin Quintero, 17, once
+ , Duver Valencia, 14, noveno
+ , Albert García, 10, quinto
+ , Jhon Londoño, 6, primero
+ , Esteban Florez, 8, tercero

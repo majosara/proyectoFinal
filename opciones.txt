@@ -1,2 +1,0 @@
-id_pregunta, id_respuesta, opciones
- , , 

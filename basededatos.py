@@ -10,3 +10,4 @@ for linea in f:
     print(linea, type(linea))
 f.close()
 print('nuevo for')
+

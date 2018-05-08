@@ -1,11 +1,151 @@
-id_pregunta, materia, curso, pregunta:
- , español, preescolar, ¿Cuál es la vocal que le sigue a la "e"?
-2. Si mezclo azul y amarillo, ¿qué color obtengo?
- , español, preescolar, ¿Cuántas son las vocales?
-4. Si tengo tres manzanas y le regalo una a mi amigo, ¿cuántas me quedan?
-5. ¿Cuántos son los colores primarios?
+id_pregunta,materia,curso,pregunta
 
- , español, primero, ¿Cuántas letras tiene el abecedario?
- , español, primero, ¿Qué letra sigue después de la "v" en el abecedario?
+00,esp0,0,¿Cuál es la vocal que le sigue a la "e"?
+01,esp0,0,¿Cuántas son las vocales?
+02,esp0,0,¿Cuáles son los colores primarios?
+03,esp0,0,En una conversación debes...
 
- , matemática, primero, ¿Cuánto es 1 x 0?
+04,mat0,0,Si mezclo azul y amarillo, ¿qué color obtengo?
+05,mat0,0,¿Cuántas manzanas tengo si tu mamá te dio una y tu papá otra?
+06,mat0,0,¿Cuánto es 5+1?
+07,mat0,0,Si tengo tres borradores y necesito uno ¿cuántos puedo prestar?
+
+
+08,esp1,1,¿Cuántas letras tiene el abecedario?
+09,esp1,1,¿Qué letra sigue después de la "v" en el abecedario?
+10,esp1,1,¿"Casa" es lo mismo que "caza"?
+11,esp1,1,¿La letra "M" es mayúscula o minúscula?
+
+12,mat1,1,¿Cuántos son los días de la semana?
+13,mat1,1,Si tengo tres manzanas y le regalo una a mi amigo, ¿cuántas me quedan?
+14,mat1,1,¿Cuántos son los colores primarios?
+15,mat1,1,¿Cuántos son los meses del año?
+
+
+16,esp2,2,¿Cuántas sílabas tiene la palabra "casa"?
+17,esp2,2,¿Qué es el diccionario?
+18,esp2,2,¿Cuántas partes tiene el cuento?
+19,esp2,2,¿La letra "j" se pronuncia igual que la "g"?
+
+20,mat2,2,¿Cuánto es 2 x 2?
+21,mat2,2,¿Cuánto es 10 - 5?
+22,mat2,2,¿Cuántos segundos es un minuto?
+23,mat2,2,¿El círculo es redondo o recto?
+
+
+24,esp3,3,¿Para qué sirve el punto final?
+25,esp3,3,¿Cuál es la diferencia entre el mito y la fábula?
+26,esp3,3,¿Cuál de los siguientes es un adjetivo?
+27,esp3,3,¿Cómo se divide la oración?
+
+28,mat3,3,¿Cuántos lados tiene un triángulo?
+29,mat3,3,¿Cuántas horas son un día?
+30,mat3,3,¿Cuántas cifras tiegne el número "125"?
+31,mat3,3,¿Cuántas unidades de cien hay en el número "345"?
+
+32,nat1,3,¿Cuál de los siguientes es un órgano del cuerpo humano?
+33,nat1,3,¿El ser humano, los animales y las plantas reaccionan entre sí?
+34,nat1,3,¿Qué es la traslación?
+35,nat1,3,¿Cuáles son todos los puntos cardinales?
+
+
+36,esp4,4,¿Qué tipo de texto es "¿Cuál es el animal que más tarda en quitarse los zapatos?"?
+37,esp4,4,¿Cuál de los siguientes es un sustantivo propio?
+38,esp4,4,¿Qué significa el refrán "De tal palo, tal astilla"?
+39,esp4,4,¿Cuál es el plural de "pez"?
+
+40,mat4,4,¿Cuánto es 6 / 2?
+41,mat4,4,¿Cuántos kilos son mil gramos?
+42,mat4,4,¿1/4 es lo mismo que 2/8?
+43,mat4,4,Si tengo una torta y la parto en 8 porciones y me como 3 ¿cómo se expresa en fracción?
+
+44,nat2,4,¿Qué es una mezcla heterógeneo?
+45,nat2,4,¿Qué es una mezcla homogénea?
+46,nat2,4,¿Qué son los fósiles?
+47,nat2,4,¿Qué es la erosión?
+
+
+48,esp5,5,
+49,esp5,5,
+50,esp5,5,
+51,esp5,5,
+
+52,mat5,5,¿Cuál es la raíz cuadrada de 25?
+53,mat5,5,
+54,mat5,5,
+55,mat5,5,
+
+56,soc1,5,
+57,soc1,5,
+58,soc1,5,
+59,soc1,5,
+
+60,nat3,5,
+61,nat3,5,
+62,nat3,5,
+63,nat3,5,
+
+
+64,esp6,6,
+65,esp6,6,
+66,esp6,6,
+67,esp6,6,
+
+68,mat6,6,
+69,mat6,6,
+70,mat6,6,
+71,mat6,6,
+
+72,soc2,6,
+73,soc2,6,
+74,soc2,6,
+75,soc2,6,
+
+76,nat4,6,
+77,nat4,6,
+78,nat4,6,
+79,nat4,6,
+
+
+80,mat7,7,
+81,mat7,7,
+82,mat7,7,
+83,mat7,7,
+
+84,esp7,7,
+85,esp7,7,
+86,esp7,7,
+87,esp7,7,
+
+88,nat5,7,
+89,nat5,7,
+90,nat5,7,
+91,nat5,7,
+
+92,soc3,7,
+93,soc3,7,
+94,soc3,7,
+95,soc3,7,
+
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+
