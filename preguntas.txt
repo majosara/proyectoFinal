@@ -1,4 +1,4 @@
-id_pregunta,materia,curso,pregunta
+id_pregunta,materia,grado,pregunta
 
 00,esp0,0,¿Cuál es la vocal que le sigue a la "e"?
 01,esp0,0,¿Cuántas son las vocales?
@@ -68,7 +68,7 @@ id_pregunta,materia,curso,pregunta
 48,esp5,5,¿Cómo se hace un resumen?
 49,esp5,5,En la frase "a Juan le gusta el chocolate pero sin maní" la palabra "pero" cumple el papel de:
 50,esp5,5,En la frase "a David le gusta jugar fútbol" el verbo está en:
-51,esp5,5,
+51,esp5,5,¿Qué conjugación del verbo "ser" está mal?
 
 52,mat5,5,¿Cuál es la raíz cuadrada de 25?
 53,mat5,5,El doble de la suma de 10 y 5
@@ -147,9 +147,90 @@ id_pregunta,materia,curso,pregunta
 110,nat5,8,
 111,nat5,8,
 
-112
-113
-114
-115
-116
 
+112,esp9,9,
+113,esp9,9,
+114,esp9,9,
+115,esp9,9,
+
+116,mat9,9,
+117,mat9,9,
+118,mat9,9,
+119,mat9,9,
+
+120,soc5,9,
+121,soc5,9,
+122,soc5,9,
+123,soc5,9,
+
+124,nat6,9,
+125,nat6,9,
+126,nat6,9,
+127,nat6,9,
+
+128,geo1,9,
+129,geo1,9,
+130,geo1,9,
+131,geo1,9,
+
+
+132,trig1,10,
+133,trig1,10,
+134,trig1,10,
+135,trig1,10,
+
+136,fis1,10,
+137,fis1,10,
+138,fis1,10,
+139,fis1,10,
+
+140,qui1,10,
+141,qui1,10,
+142,qui1,10,
+143,qui1,10,
+
+144,esp10,10,
+145,esp10,10,
+146,esp10,10,
+147,esp10,10,
+
+148,fil1,10,¿Cuáles son los filósofos socráticos?
+149,fil1,10,¿En qué se centra la filosofía de Aristóteles?
+150,fil1,10,
+151,fil1,10,
+
+152,soc6,10,
+153,soc6,10,
+154,soc6,10,
+155,soc6,10,
+
+
+156,cal1,11,
+157,cal1,11,
+158,cal1,11,
+159,cal1,11,
+
+160,fis2,11,
+161,fis2,11,
+162,fis2,11,
+163,fis2,11,
+
+164,qui2,11,
+165,qui2,11,
+166,qui2,11,
+167,qui2,11,
+
+168,esp11,11,¿Qué es un texto argumentativo?
+169,esp11,11,
+170,esp11,11,
+171,esp11,11,
+
+172,fil2,11,
+173,fil2,11,
+174,fil2,11,
+175,fil2,11,
+
+176,soc7,11,¿Qué es el capitalismo?
+177,soc7,11,
+178,soc7,11,
+179,soc7,11,
