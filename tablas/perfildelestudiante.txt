@@ -1,0 +1,1 @@
+id_estudiante,nombre,puntos,vidas,año_escolar,preguntas_contestadas,preguntas_incorrectas

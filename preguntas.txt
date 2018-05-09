@@ -59,19 +59,19 @@ id_pregunta,materia,curso,pregunta
 42,mat4,4,¿1/4 es lo mismo que 2/8?
 43,mat4,4,Si tengo una torta y la parto en 8 porciones y me como 3 ¿cómo se expresa en fracción?
 
-44,nat2,4,¿Qué es una mezcla heterógeneo?
+44,nat2,4,¿Qué es una mezcla heterógenea?
 45,nat2,4,¿Qué es una mezcla homogénea?
 46,nat2,4,¿Qué son los fósiles?
 47,nat2,4,¿Qué es la erosión?
 
 
-48,esp5,5,
-49,esp5,5,
-50,esp5,5,
+48,esp5,5,¿Cómo se hace un resumen?
+49,esp5,5,En la frase "a Juan le gusta el chocolate pero sin maní" la palabra "pero" cumple el papel de:
+50,esp5,5,En la frase "a David le gusta jugar fútbol" el verbo está en:
 51,esp5,5,
 
 52,mat5,5,¿Cuál es la raíz cuadrada de 25?
-53,mat5,5,
+53,mat5,5,El doble de la suma de 10 y 5
 54,mat5,5,
 55,mat5,5,
 
@@ -127,22 +127,26 @@ id_pregunta,materia,curso,pregunta
 94,soc3,7,
 95,soc3,7,
 
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
+96,esp8,8,
+97,esp8,8,
+98,esp8,8,
+99,esp8,8,
+
+100,mat8,8,
+101,mat8,8,
+102,mat8,8,
+103,mat8,8,
+
+104,soc4,8,
+105,soc4,8,
+106,soc4,8,
+107,soc4,8,
+
+108,nat5,8,
+109,nat5,8,
+110,nat5,8,
+111,nat5,8,
+
 112
 113
 114
