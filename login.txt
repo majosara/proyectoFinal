@@ -11,3 +11,4 @@ carlosramirez,2021
 juandavidpatiño,2223
 mateoreinoso2526
 jacobohernandez,0201
+admin,admin1234

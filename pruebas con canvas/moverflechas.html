@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	window.onload = function(){
+		document.onkeydown = chars;
+		}
+
+	var leftRight = 0;
+	var topDown = 0;
+
+	function chars(evento){
+		if (window.event)
+			evento = window.event;
+			caracteres(event.keyCode)
+		}
+
+	function caracteres(chars){
+		if(chars == 39){
+			leftRight +=10;
+			document.getElementById("caja").style.marginLeft = leftRight+"px";
+			}
+
+		if(chars == 37){
+			leftRight +=-10;
+			document.getElementById("caja").style.marginLeft = leftRight+"px";
+			}
+		if(chars == 38){
+			topDown +=-10;
+			document.getElementById("caja").style.marginTop = topDown+"px";
+			}
+
+		if(chars == 40){
+			topDown +=10;
+			document.getElementById("caja").style.marginTop = topDown+"px";
+			}
+		}
+
+	</script>
+</head>
+<body>
+</body>
+<span id="string"></span>
+<div id="caja" style="width:100px;height: 100px;background: red"></div>
+</html>

@@ -72,39 +72,39 @@ id_pregunta,materia,grado,pregunta
 
 52,mat5,5,¿Cuál es la raíz cuadrada de 25?
 53,mat5,5,El doble de la suma de 10 y 5
-54,mat5,5,
-55,mat5,5,
+54,mat5,5,¿Es 2 mayor que 3/2?
+55,mat5,5,¿Cuánto es 20 x 10?
 
-56,soc1,5,
-57,soc1,5,
-58,soc1,5,
-59,soc1,5,
-
-60,nat3,5,
-61,nat3,5,
-62,nat3,5,
-63,nat3,5,
+56,soc1,5,¿Quién descubrió América?
+57,soc1,5,¿Cuántos pisos térmicos tiene Colombia?
+58,soc1,5,¿Todas las personas tienen derechos?
+59,soc1,5,¿Qué son las normas?
 
 
-64,esp6,6,
-65,esp6,6,
-66,esp6,6,
-67,esp6,6,
+60,nat3,5,¿Cuánto hay de tierra y de agua en el planeta?
+61,nat3,5,¿En lo glaciares hay agua...?
+62,nat3,5,¿Qué causa la marea en las aguas?
+63,nat3,5,¿Es el estómago parte del sistema...?
 
-68,mat6,6,
-69,mat6,6,
-70,mat6,6,
-71,mat6,6,
+64,esp6,6,¿Cuál de las siguientes palabras es sinónimo de "anillo"?
+65,esp6,6,¿Qué es la carta?
+66,esp6,6,¿Qué es el emisor en un texto?
+67,esp6,6,¿Qué es un conector?
 
-72,soc2,6,
-73,soc2,6,
-74,soc2,6,
-75,soc2,6,
+68,mat6,6,¿Cómo se descompone 8 en factores primos?
+69,mat6,6,¿Cuánto es 6/100?
+70,mat6,6,¿Cuánto es el 50% de 10?
+71,mat6,6,¿Es 2,34 mayor que 3,344?
 
-76,nat4,6,
-77,nat4,6,
-78,nat4,6,
-79,nat4,6,
+72,soc2,6,¿Qué es la constitución Política de Colombia?
+73,soc2,6,¿En qué continente está ubicada Colombia?
+74,soc2,6,¿Qué oceanos rodean a Colombia?
+75,soc2,6,¿Cuál de los siguientes es un derecho es fundamental?
+
+76,nat4,6,¿Qué es la atmósfera?
+77,nat4,6,¿Qué es la fotosíntesis?
+78,nat4,6,¿Qué le provee energía al cuerpo humano?
+79,nat4,6,¿Cuáles son los estados de la materia?
 
 
 80,mat7,7,
@@ -117,7 +117,7 @@ id_pregunta,materia,grado,pregunta
 86,esp7,7,
 87,esp7,7,
 
-88,nat5,7,
+88,nat5,7,¿Qué es la evaporación?
 89,nat5,7,
 90,nat5,7,
 91,nat5,7,
