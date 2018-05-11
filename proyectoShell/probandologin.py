@@ -1,8 +1,10 @@
+from registrar_usuario import*
 def comprobar_usuario():
     rol = None
     logged = False
     lista = open('login.txt')
     l = []
+    datos = []
     usuario = input('ingrese el usuario: ')
     contrasena = input('ingrese la contrasena: ')
     for user in lista:
@@ -16,7 +18,11 @@ def comprobar_usuario():
             rol = l[n][0]
         else:
             logged = False
-    print('bienvenido',rol,usuario)
+        if logged:
+            if rol == 'admin':
+                registrar_usuario(datos)
+            else:
+                print('Bienvenido a Check you!,',usuario)
 
     
 comprobar_usuario()

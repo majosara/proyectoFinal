@@ -1,0 +1,14 @@
+usuario,contraseña,rol
+robinquintero,4321,estudiante
+duvervalencia,1234,estudiante
+albertgarcia,5678,estudiante
+jhonlondoño,8765,estudiante
+estebanflorez,1011,estudiante
+hafidlopez,1213,estudiante
+andresalazar,1415,estudiante
+juanpablogiron,1617,estudiante
+carlosramirez,2021,estudiante
+juandavidpatiño,2223,estudiante
+mateoreinoso2526,estudiante
+jacobohernandez,0201,estudiante
+admin,admin1234,estudiante

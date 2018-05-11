@@ -1,0 +1,6 @@
+rol,usuario,contrasena,correo,edad,grado,id_estudiante
+admin,admin,admin1234,admin@mail.com,17,11,001
+estudiante,robin,4321,robin@mail.com,17,11,002
+estudiante,jacobo,5678,jacobo@mail.com,16,10,003
+estudiante,juan,1234,juan@mail.com,12,7,6
+estudiante,maria,5678,maria@mail.com,10,4,8
