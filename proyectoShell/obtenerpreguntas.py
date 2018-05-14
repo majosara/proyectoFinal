@@ -2,7 +2,7 @@ preguntas_grado = [] #Lista que guarda las preguntas segun el grado
 
 id_answers = [] #esta lista contiene las respuestas de acuerdo al id de opciones
 
-id_options= []
+id_options= []  #esta variable contiene la lista de las opciones de cada pregunta segun su id
 
 def getQuestions(grado, preguntas_grado):
 	"""
@@ -74,7 +74,7 @@ def getOptions(id_pregunta):
 	Esta funcion Lista que contiene las opciones segun el id 
 	de cada pregunta
 	"""
-	options = []
+	options = [] #esta lista contiene las opciones segun el id de pregunta
 	opt = open('opciones.txt')
 
 	for op in opt:
@@ -89,6 +89,11 @@ def getOptions(id_pregunta):
 getOptions('00')
 
 def menu(preguntas_grado,id_options,id_answers):
+	"""
+	Esta funcion recibe la lista donde estan las preguntas por el grado,
+	los id de las opciones y los id de las respuestas, lo pone en un menu
+	y solo basta que el usuario ingrese la letra que tiene la opcion correcta.
+	"""
 	for n in range(len(preguntas_grado)):
 		if preguntas_grado[n][0] == id_options[n][0]:
 			respuesta = input("""{}
