@@ -1,9 +1,11 @@
 def getQuestions(grado):
 	"""
-
+	Esta funcion recibe el grado que esta contenido en las tablas relacionado
+	con las preguntas y mete en una lista las preguntas y en otra las preguntas
+	segun el grado que le entra de parametro
 	"""
 	preguntas = [] #lista que contiene las preguntas del juego
-	preguntas_grado = []
+	preguntas_grado = [] #Lista que guarda las preguntas segun el grado
 	p = open('preguntas.txt','r')
 
 	for line in p:
@@ -27,8 +29,28 @@ def showQuestions(preguntas):
 	"""
 	pass
 
-def getAnswers():
-	pass
+def getAnswers(id_pregunta):
+	"""
+	Esta funcion obtiene la respuesta correcta en base al id de pregunta
+	"""
+	answers = [] #esta lista contiene todas las respuestas
+
+	id_answers = [] #esta lista contiene las respuestas de acuerdo al id de opciones
+
+	ans = open('opciones.txt')
+
+	for an in ans:
+		an = an.replace('\n','')
+		answers.append(an.split(','))
+	ans.close()
+	answers.pop(0)
+
+	for n in range (len(answers)):
+		if answers[n][0] == str(id_pregunta):
+			id_answers.append(answers[n])
+		print (id_answers)
+	getAnswers('00')
+
 
 def getOptions(id_pregunta):
 	"""
@@ -39,10 +61,10 @@ def getOptions(id_pregunta):
 	id_options = []
 	opt = open('opciones.txt')
 
-	for opt in p:
-		opt = opt.replace('\n','')
+	for op in opt:
+		op = op.replace('\n','')
 		options.append(opt.split(','))
-	opt.close()
+	op.close()
 	options.pop(0)
 
 	for n in range(len(options)):
