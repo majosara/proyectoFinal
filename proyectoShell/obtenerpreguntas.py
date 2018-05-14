@@ -32,7 +32,21 @@ def showQuestions(usuario):
 	""" 
 	Esta funcion mostrara en pantalla las preguntas que se anadieron a la lista preguntas
 	"""
-	pass
+	dataUser = [] #esta lista tiene la base de datos de los usuarios del juego
+	info_user = #esta lista contiene la informacion del usuario que se recibe en el parametro de entrada
+	
+	lista = open('datos_estudiantes.txt') 
+	
+	for user in lista:
+		user = user.replace('\n','')
+		dataUser.append(user.split(','))
+	lista.close()
+	dataUser.pop(0)
+
+	for i in range(len(dataUser)):
+		if dataUser[i][1] == usuario:
+			info_user.append(dataUser[i])
+	getQuestions(info_user[6], preguntas_grado)
 
 def getAnswers(id_pregunta):
 	"""
@@ -73,3 +87,10 @@ def getOptions(id_pregunta):
 		if options[n][0] == str(id_pregunta):
 			id_options.append(options[n])
 getOptions('00')
+
+def menu(preguntas_grado,id_options,id_answers):
+	for n in range(len(preguntas_grado)):
+		if preguntas_grado[n][0] == id_options[n][0]:
+			respuesta = input("""{}
+				a.{}b.{}
+			c.{} d.{} """.format(preguntas_grado[n][3], id_options[n][1],id_options[n][2],id_options[n][3],id_options[n][4]))
