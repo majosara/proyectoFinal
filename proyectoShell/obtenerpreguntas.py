@@ -1,11 +1,16 @@
-def getQuestions(grado):
+preguntas_grado = [] #Lista que guarda las preguntas segun el grado
+
+id_answers = [] #esta lista contiene las respuestas de acuerdo al id de opciones
+
+id_options= []
+
+def getQuestions(grado, preguntas_grado):
 	"""
 	Esta funcion recibe el grado que esta contenido en las tablas relacionado
 	con las preguntas y mete en una lista las preguntas y en otra las preguntas
 	segun el grado que le entra de parametro
 	"""
 	preguntas = [] #lista que contiene las preguntas del juego
-	preguntas_grado = [] #Lista que guarda las preguntas segun el grado
 	p = open('preguntas.txt','r')
 
 	for line in p:
@@ -23,7 +28,7 @@ def getQuestions(grado):
 if __name__ == '__main__':
 	getQuestions(1)
 
-def showQuestions(preguntas):
+def showQuestions(usuario):
 	""" 
 	Esta funcion mostrara en pantalla las preguntas que se anadieron a la lista preguntas
 	"""
@@ -34,8 +39,6 @@ def getAnswers(id_pregunta):
 	Esta funcion obtiene la respuesta correcta en base al id de pregunta
 	"""
 	answers = [] #esta lista contiene todas las respuestas
-
-	id_answers = [] #esta lista contiene las respuestas de acuerdo al id de opciones
 
 	ans = open('opciones.txt')
 
@@ -58,7 +61,6 @@ def getOptions(id_pregunta):
 	de cada pregunta
 	"""
 	options = []
-	id_options = []
 	opt = open('opciones.txt')
 
 	for op in opt:
