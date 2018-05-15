@@ -1,1 +1,3 @@
-id_estudiante,nombre,puntos,vidas,año_escolar,preguntas_contestadas,preguntas_incorrectas
+id_estudiante,usuario,grado,puntos,vidas
+1,robinquintero,11,0,5
+2,duvervalencia,8,0,5
