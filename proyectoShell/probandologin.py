@@ -1,4 +1,5 @@
 from registrar_usuario import*
+from obtenerpreguntas import*
 def comprobar_usuario():
     rol = None
     logged = False
