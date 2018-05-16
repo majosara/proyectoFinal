@@ -36,13 +36,16 @@ def login(rol=None,username=None):
 			session['logged_in'] = True
 			username = request.form['username']
 			rol = userData[n][0]
-	return index()
+			username = request.form['username']
+	if rol != None and username != None:
+		return index(rol,username)
+	else:
+		return index(rol,username)
 
 @app.route('/users')
 def users(rol,username):
 	"""
 	Esta funcion identifica el rol del usuario, si es administrador o estudiante y dirige a cada uno a donde le corresponda
-
 	"""
 	if rol == 'admin':
 		return render_template('admin.html')
@@ -89,7 +92,7 @@ def admin(rol=None,username=None):
 			else:
 				return render_template('admin.html',rol=rol,username=username)
 		else:
-			index
+			index()
 
 @app.route('/logout')
 def logout():
