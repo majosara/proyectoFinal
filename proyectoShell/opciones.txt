@@ -1,9 +1,9 @@
-id_pregunta,id_respuesta,opciones
-00,00,[a,i,o,u]
-01,01,[[a,e,i,o,u],[a,b,c,d,e],[a,c,f,g,e],[a,e,o,u,i]]
-02,02,[[amarillo,azul,rojo],[amarillo,azul,verde],[rojo, morado,azul],[rojo,amarillo,naranja]]
-03,03,[Hablar sin importar quien lo haga,Esperar tu turno para hablar]
-04,04,[azul,amarillo,verde,violeta]
+id_pregunta,id_respuesta,opc1,opc2,opc3,opc4
+00,00,a,i,o,u
+01,01,[a,e,i,o,u],[a,b,c,d,e],[a,c,f,g,e],[a,e,o,u,i]
+02,02,[amarillo,azul,rojo],[amarillo,azul,verde],[rojo, morado,azul],[rojo,amarillo,naranja]
+03,03,Hablar sin importar quien lo haga,Esperar tu turno para hablar
+04,04,azul,amarillo,verde,violeta
 05,05,[3,0,2,1]
 06,06,[6,5,1,3]
 07,07,[3,2,1,0]

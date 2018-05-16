@@ -1,0 +1,13 @@
+id_estudiante,nombre,edad,grado
+1,Robin Quintero,17,11
+2,Duver Valencia,14,8
+3,Albert García,5,0
+4,Jhon Londoño,6,1
+5,Esteban Florez,8,3
+6,Hafid Lopez,7,2
+7,Andres Salazar,16,10
+8,Juan Pablo Giron,15,9
+9,Carlos Ramirez,13,7
+10,Juan David Patino,12,6
+11,Mateo Reinoso,11,5
+12,Jacobo Hernandez,9,4

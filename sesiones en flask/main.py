@@ -24,7 +24,7 @@ def index():
 	if not session.get('logged_in'):
 		return render_template('login.html')
 	else:
-		return render_template('users.html')
+		return users(rol,username)
 
 @app.route('/login', methods= ['POST'])
 def login(rol=None,username=None):
@@ -33,9 +33,13 @@ def login(rol=None,username=None):
 	que en este caso son parametros vacios y comprueba ambos datos
 	para saber a donde direccionarlos dentro del juego
 	"""
-	global userData
-	for n in range(len(userData)): #
-		if request.form['username'] == userData[n][1] and request.form['password'] == userData[n][2]:
+	users = open('login.txt')
+	infoLogin = []
+	for n in users:
+		n = n.replace('/n', '')
+		infoLogin.append(n.split(','))
+
+		if request.form['username'] == userData[n][0] and request.form['password'] == userData[n][1]:
 			session['logged_in'] = True
 			username = request.form['username']
 			rol = userData[n][0]
@@ -46,12 +50,12 @@ def login(rol=None,username=None):
 		return index(rol,username)
 
 @app.route('/users')
-def users(rol,username):
+def users(rol=None,username=None):
 	"""
 	Esta funcion identifica el rol del usuario, si es administrador o estudiante y dirige a cada uno a donde le corresponda
 	"""
 	if rol == 'admin':
-		return render_template('admin.html')
+		return render_template('admin.html',rol=rol,username=username)
 	else:
 		if rol == 'estudiante':
 			profileData = []
@@ -66,10 +70,10 @@ def users(rol,username):
 					grado = profileData[n][2]
 					puntos = profileData[n][3]
 					vidas = profileData[n][4]
-			return render_template('estudiantes.html', rol=rol,username=username,grado=grado,puntaje=puntaje,vidas=vidas)
+			return render_template('users.html', rol=rol,username=username,grado=grado,puntaje=puntaje,vidas=vidas)
 
 
-@app.route('/admin')
+@app.route('/admin',methods=['POST'])
 def admin(rol=None,username=None):
 	"""
 	Esta funcion define lo que el administrador puede realizar
@@ -105,3 +109,6 @@ def logout():
 	session['logged_in'] = False
 	rol = None
 	return index()
+
+if __name__ == '__main__':
+	app.run(debug=True)

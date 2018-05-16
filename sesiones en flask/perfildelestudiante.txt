@@ -1,3 +1,5 @@
 id_estudiante,usuario,grado,puntos,vidas
 1,robinquintero,11,0,5
 2,duvervalencia,8,0,5
+3,albertgarcia,0,0,5
+4,jhonlondono,1,0,5

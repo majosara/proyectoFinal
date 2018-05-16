@@ -24,6 +24,7 @@ def comprobar_usuario():
                 registrar_usuario(datos)
             else:
                 print('Bienvenido a Check you!,',usuario)
+                return showQuestions(usuario)
 
     
 comprobar_usuario()

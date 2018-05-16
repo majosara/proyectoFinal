@@ -4,7 +4,7 @@ id_answers = [] #esta lista contiene las respuestas de acuerdo al id de opciones
 
 id_options= []  #esta variable contiene la lista de las opciones de cada pregunta segun su id
 
-def getQuestions(grado, preguntas_grado):
+def getQuestions(grado,preguntas_grado):
 	"""
 	Esta funcion recibe el grado que esta contenido en las tablas relacionado
 	con las preguntas y mete en una lista las preguntas y en otra las preguntas
@@ -25,30 +25,8 @@ def getQuestions(grado, preguntas_grado):
 	
 	##print(preguntas_grado)
 
-if __name__ == '__main__':
-	getQuestions(1)
 
-def showQuestions(usuario):
-	""" 
-	Esta funcion mostrara en pantalla las preguntas que se anadieron a la lista preguntas
-	"""
-	dataUser = [] #esta lista tiene la base de datos de los usuarios del juego
-	info_user = #esta lista contiene la informacion del usuario que se recibe en el parametro de entrada
-	
-	lista = open('datos_estudiantes.txt') 
-	
-	for user in lista:
-		user = user.replace('\n','')
-		dataUser.append(user.split(','))
-	lista.close()
-	dataUser.pop(0)
-
-	for i in range(len(dataUser)):
-		if dataUser[i][1] == usuario:
-			info_user.append(dataUser[i])
-	getQuestions(info_user[6], preguntas_grado)
-
-def getAnswers(id_pregunta):
+def getAnswers(id_pregunta,id_answers):
 	"""
 	Esta funcion obtiene la respuesta correcta en base al id de pregunta
 	"""
@@ -65,11 +43,11 @@ def getAnswers(id_pregunta):
 	for n in range (len(answers)):
 		if answers[n][0] == str(id_pregunta):
 			id_answers.append(answers[n])
-		print (id_answers)
-	getAnswers('00')
+		##print (id_answers)
+	##getAnswers('00')
 
 
-def getOptions(id_pregunta):
+def getOptions(id_pregunta,id_options):
 	"""
 	Esta funcion Lista que contiene las opciones segun el id 
 	de cada pregunta
@@ -79,14 +57,13 @@ def getOptions(id_pregunta):
 
 	for op in opt:
 		op = op.replace('\n','')
-		options.append(opt.split(','))
-	op.close()
+		options.append(op.split(','))
+	opt.close()
 	options.pop(0)
 
 	for n in range(len(options)):
 		if options[n][0] == str(id_pregunta):
 			id_options.append(options[n])
-getOptions('00')
 
 def menu(preguntas_grado,id_options,id_answers):
 	"""
@@ -99,3 +76,41 @@ def menu(preguntas_grado,id_options,id_answers):
 			respuesta = input("""{}
 				a.{}b.{}
 			c.{} d.{} """.format(preguntas_grado[n][3], id_options[n][1],id_options[n][2],id_options[n][3],id_options[n][4]))
+			if respuesta == preguntas_grado[n][1]:
+				print('Correcto!')
+			else:
+				print('Incorrecto!')
+
+def showQuestions(usuario):
+	""" 
+	Esta funcion mostrara en pantalla las preguntas que se anadieron a la lista preguntas
+	"""
+	dataUser = [] #esta lista tiene la base de datos de los usuarios del juego
+	info_user = []#esta lista contiene la informacion del usuario que se recibe en el parametro de entrada
+	lista = open('datos_estudiantes.txt') 
+	
+	for user in lista:
+		user = user.replace('\n','')
+		dataUser.append(user.split(','))
+	lista.close()
+	dataUser.pop(0)
+
+	for i in range(len(dataUser)):
+		if dataUser[i][1] == usuario:
+			info_user=dataUser[i]
+			print(info_user)
+
+	getQuestions(info_user[6], preguntas_grado)
+
+	for i in range(len(preguntas_grado)):
+		getOptions(preguntas_grado[n][0],id_options)
+	
+	for i in range(len(preguntas_grado)):
+		getAnswers(preguntas_grado[n][0],id_answers)
+
+	menu(preguntas_grado,id_options,id_answers)
+
+
+
+##if __name__ == '__main__':
+##	getQuestions(1,preguntas_grado)
