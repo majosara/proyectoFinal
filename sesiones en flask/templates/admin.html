@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% block body}
+{if session['logged_in'] == True}
+<html>
+<head>
+	<title> Administrador {{  username }} </title>
+
+	<style>
+		u1 {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: white;
+		}
+		body {background-color: white;}
+		h1{color: black;}
+		p {color: black;}
+		li{float: left;}
+		li a{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			border-right: 1px solid #bbb;
+		}
+		li a:hover{
+			background-color: #111;
+		}
+		.active{
+			background-color: #FF9300;
+		}
+		.stroke {
+			-webkit-text-fill-color:violet;
+			-webkit-text-fill-color:1px black;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a class="active">Administrador</a></li>
+		<li style="float: right;"><a class="active" href='/logout'>Cerrar sesion</a></li>
+	</ul>
+
+	<link rel="stylesheet" type="text/css" href="/static/login.css">
+	<form action="/admin" method="POST">
+		<div class = "login">
+			<div class="login-screen">
+				<div class="app-title">
+					<h1>Registrar usuarios</h1>
+				</div>
+
+				<div class="login-form">
+					<div class="control-group">
+					<input type="text" name="rolRegister" class="login-field" value="" placeholder="Rol">
+					<label class="login-field" value="" placeholder= "Nombre de Usuario" name = "userRegistrer"></label>
+					</div> <div class="control-group">
+	                <input type="password" class="login-field" value="" placeholder="Contrasena" name="contraseñaRegister">
+	                <label class="login-field-icon fui-lock" for="login-pass"></label>
+	                </div>
+
+	                <div class="control-group">
+	                <input type="text" class="login-field" value="" placeholder="Correo Electronico" name="correoRegister">
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+
+	                <div class="control-group">
+	                <input type="text" class="login-field" value="" placeholder="Edad" name="edadRegister">
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+
+	                <div class="control-group">
+	                <input type="text" class="login-field" value="" placeholder="Grado" name="gradoRegister">
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+	        <input type="submit" value="Registrar" class="btn btn-primary btn-large btn-lock">
+	                <br>
+	            </div>
+	        </div>
+	    </div>
+	</form>
+	{% else %}
+	<p>No te encuentras Logueado!</p>
+	{% endif %}
+	{% endblock %}
+
+</body>
+</html>
+					 <div class="control-group">
+	                <input type="password" class="login-field" value="" placeholder="Contraseña" name="contraseñaRegister">
+	                <label class="login-field-icon fui-lock" for="login-pass"></label>
+	                </div>
+
+	                <div class="control-group">
+	                <input type="text" class="login-field" value="" placeholder="Correo Electronico" name="correoRegister">
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+
+	                <div class="control-group">
+	                <input type="text" class="login-field" value="" placeholder="Edad" name="edadRegister">
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+
+	                <div class="control-group">
+	                <input type="text" class="login-field" value="" placeholder="Grado" name="gradoRegister">
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+	        <input type="submit" value="Registrar" class="btn btn-primary btn-large btn-lock">
+	                <br>
+	            </div>
+	        </div>
+	    </div>
+	</form>
+	{% else %}
+	<p>No te encuentras Logueado!</p>
+	{% endif %}
+	{% endblock %}
+
+</body>
+</html>
+	</form>
+
+</body>
+</html>

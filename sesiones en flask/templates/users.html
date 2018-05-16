@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check you!</title>
+	<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+		body {background-color: #2483B0;}
+		h1 {color: white;}
+		p {color: black;}
+		li {float: left;}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			border-right: 1px solid #bbb;
+		}
+		li a:hover {
+			background-color: #111;
+		}
+		.active {
+			background-color: #FF9300;
+		}
+		li:last-child {
+			border-right: none;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a class="active">Bienvenid@ {{ username }}</a></li>
+		<li><a>Who want's to be Graduated</a></li>
+		<li><a>grado: {{ grado }}</a></li>
+		<li><a>puntaje: {{ puntaje }}</a></li>
+		<li><a>vidas: {{ vidas }}</a></li>
+		<li style="float: right;"><a href="/logout" class="active">Cerrar Sesion</a></li>
+	</ul>
+</body>
+</html>
