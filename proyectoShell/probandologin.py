@@ -1,5 +1,5 @@
-from registrar_usuario import*
-from obtenerpreguntas import*
+from registrar_usuario import *
+from obtenerpreguntas import *
 def comprobar_usuario():
     rol = None
     logged = False
@@ -19,6 +19,7 @@ def comprobar_usuario():
             rol = l[n][0]
         else:
             logged = False
+            
         if logged:
             if rol == 'admin':
                 registrar_usuario(datos)

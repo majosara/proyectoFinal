@@ -3,3 +3,4 @@ estudiante,robinquintero,4321,robin@mail.com,17,11,0
 estudiante,jacobo,5678,jacobo@mail.com,16,10,2
 estudiante,juan,1234,juan@mail.com,12,7,3
 estudiante,maria,5678,maria@mail.com,10,4
+estudiante,mariana,1234,mariana@mail.com,12,5,123243

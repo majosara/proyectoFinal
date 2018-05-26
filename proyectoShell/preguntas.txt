@@ -1,14 +1,14 @@
 id_pregunta,materia,grado,pregunta
-00,esp0,0,¿Cuál es la vocal que le sigue a la "e"?
-01,esp0,0,¿Cuántas son las vocales?
-02,esp0,0,¿Cuáles son los colores primarios?
-03,esp0,0,En una conversación debes...
-04,mat0,0,Si mezclo azul y amarillo, ¿qué color obtengo?
-05,mat0,0,¿Cuántas manzanas tengo si tu mamá te dio una y tu papá otra?
-06,mat0,0,¿Cuánto es 5+1?
-07,mat0,0,Si tengo tres borradores y necesito uno ¿cuántos puedo prestar?
-08,esp1,1,¿Cuántas letras tiene el abecedario?
-09,esp1,1,¿Qué letra sigue después de la "v" en el abecedario?
+0,esp0,0,¿Cuál es la vocal que le sigue a la "e"?
+1,esp0,0,¿Cuántas son las vocales?
+2,esp0,0,¿Cuáles son los colores primarios?
+3,esp0,0,En una conversación debes...
+4,mat0,0,Si mezclo azul y amarillo, ¿qué color obtengo?
+5,mat0,0,¿Cuanto es dos mas dos menos dos?
+6,mat0,0,¿Cuánto es 5+1?
+7,mat0,0,Si tengo tres borradores y necesito uno ¿cuántos puedo prestar?
+8,esp1,1,¿Cuántas letras tiene el abecedario?
+9,esp1,1,¿Qué letra sigue después de la "v" en el abecedario?
 10,esp1,1,¿"Casa" es lo mismo que "caza"?
 11,esp1,1,¿La letra "M" es mayúscula o minúscula?
 12,mat1,1,¿Cuántos son los días de la semana?

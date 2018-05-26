@@ -36,13 +36,13 @@ def login(rol=None,username=None):
 	users = open('login.txt')
 	infoLogin = []
 	for n in users:
-		n = n.replace('/n', '')
+		n = n.replace('/n','')
 		infoLogin.append(n.split(','))
 
-		if request.form['username'] == userData[n][0] and request.form['password'] == userData[n][1]:
+		if request.form['username'] == users[n][0] and request.form['password'] == userData[n][1]:
 			session['logged_in'] = True
 			username = request.form['username']
-			rol = userData[n][0]
+			rol = users[n][0]
 			username = request.form['username']
 	if rol != None and username != None:
 		return index(rol,username)
