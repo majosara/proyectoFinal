@@ -2,7 +2,7 @@ id_answers = [] #esta variable contiene la respuesta correcta a una pregunta seg
 preguntas_grado = [] #esta variable contiene las preguntas segun el grado del usuario
 id_options = [] #esta variable contiene las opciones segun el id de la pregunta
 
-def getQuestions():
+def getQuestions(grado,preguntas_grado):
 	"""Esta funcion se utilizara para obtener las preguntas del
 	archivo plano y ponerlas en una lista"""
 	preguntas = []
@@ -14,10 +14,13 @@ def getQuestions():
 
 	p.close()
 	preguntas.pop(0)
-	return preguntas
 	##print(preguntas)
 
-def getOptions(preguntas_grado,id_options):
+	for i in range(len(preguntas)):
+		if preguntas[i][2] == str(grado):
+			preguntas_grado.append(preguntas[i])
+
+def getOptions(preguntas,id_options):
 	"""Esta funcion se utilizara para obtener las opciones de las
 	preguntas que estan en un archivo plano y las pondra en una
 	lista"""
@@ -28,10 +31,11 @@ def getOptions(preguntas_grado,id_options):
 		opcion = opcion.replace('\n','')
 		options.append(opcion.split(','))
 	o.close()
-	o.pop(0)
+
+	options.pop(0)
 
 	for i in range(len(options)):
-		if options[i][0] == srt(preguntas[0]):
+		if options[i][0] == str(preguntas[0]):
 			id_options.append(options[i])
 
 def rightAnswers(preguntas_grado,id_answers):
@@ -53,12 +57,12 @@ def rightAnswers(preguntas_grado,id_answers):
 	#print(id_answers)
 
 
-def questions4grade(preguntas,grado,preguntas_grado):
+#def questions4grade(preguntas,grado,preguntas_grado):
 	"""Esta funcion pone en una lista las preguntas segun el usuario,
 	es decir, por el grado de dicho usuario"""
-	for preg in range(len(preguntas)):
-		if preguntas[preg][2] == str(grado):
-			preguntas_grado.append(preguntas[preg])
+	#for preg in range(len(preguntas)):
+		#if preguntas[preg][2] == str(grado):
+			#preguntas_grado.append(preguntas[preg])
 			#print(preguntas_grado)
 
 def menuPreguntasOpciones(preguntas_grado,id_options,id_answers):
@@ -94,10 +98,12 @@ def showQuestions(usuario):
 			infoUser = dataUser[i]
 			print(infoUser)
 
-	questions4grade(preguntas,infoUser[6],preguntas_grado)
+	getQuestions(infoUser[5],preguntas_grado)
 
 	for i in range(len(preguntas_grado)):
 		getOptions(preguntas_grado[i][0],id_options)
 
 	for i in range(len(preguntas_grado)):
 		rightAnswers(preguntas_grado[i][0],id_answers)
+
+	menuPreguntasOpciones(preguntas_grado,id_options,id_answers)

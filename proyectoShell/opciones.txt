@@ -2,98 +2,100 @@ id_pregunta,id_respuesta,opciones
 0,0,z,i,o,u
 1,1,a e i o u,a b c d e,a c f g e,a e o u i
 2,2,amarillo azul rojo,amarillo azul verde,rojo morado azul,rojo amarillo naranja
-3,3,Hablar sin importar quien lo haga,Esperar tu turno para hablar
+3,3,Hablar sin importar quien lo haga,Esperar tu turno para hablar,Todas las anteriores,Niguna de las anteriores
 4,4,azul,amarillo,verde,violeta
 5,5,3,0,2,1
 6,6,6,5,1,3
-7,7,[3,2,1,0]
-8,8,[23,26,27,24]
-9,9,[u,w,s,t]
-10,10,[Si,No]
-11,11,[Mayúscula, minúscula]
-12,12,[6,7,8,9]
-13,13,[3,1,4,2]
-14,14,[3,2,4,7]
-15,15,[14,8,10,12]
-16,16,[0,3,4,2]
-17,17,[Un libro de cuentos,Un libro para escribir,Libro con significados de palabras,Un libro de aventuras]
-18,18,[2,4,3,5]
-19,19,[Si,No]
-20,20,[2,1,4,5]
-21,21,[5,10,4,9]
-22,22,[30,90,180,60]
-23,23,[Redondo,Recto]
-24,24,[Para terminar un parrafo,Para terminar una oracion,Para separar una oracion de otra, Para una pausa cuando se lee]
-25,25,[El mito es verdadero y la fábula no,No existe diferencia,La fábula es una leyenda y no tiene fin,El objetivo de la fábula es dejar enseñanza y el mito enseñar de cultura]
-26,26,[amable,casa,arbol,amor]
-27,27,[[Adjetivo, sustanito, articulo],[Articulo, sujeto, verbo],[Sujeto, verbo, predicado],[Verbo, predicado, sujeto]]
-28,28,[2,5,4,3]
-29,29,[25,28,24,12]
-30,30,[4,3,5,125]
-31,31,[3,4,5,345]
-32,32,[Brazo,Estomago,Pies,Cabeza]
-33,33,[Si,No]
-34,34,[El movimiento de la tierra alrededor del sol,El movimiento del sol en su eje,Cuando un organo se mueve,Cuando un animal se muere]
-35,35,[[Norte, sur],[Norte, sur, este, oeste],[Este, Oeste],[Occidente, oriente]]
+7,7,3,2,1,0
+8,8,23,26,27,24
+9,9,u,w,s,t
+10,10,Si,No,Todas las anteriores,Niguna de las anteriores
+11,11,Mayúscula, minúscula,Todas las anteriores,Ninguna de las anteriores
+12,12,6,7,8,9
+13,13,3,1,4,2
+14,14,3,2,4,7
+15,15,14,8,10,12
+16,16,0,3,4,2
+17,17,Un libro de cuentos,Un libro para escribir,Libro con significados de palabras,Un libro de aventuras
+18,18,2,4,3,5
+19,19,Si,No,Todas las anteriores,Ninguna de las anteriores
+20,20,2,1,4,5
+21,21,5,10,4,9
+22,22,30,90,180,60
+23,23,Redondo,Recto,Todas las anteriores,Ninguna de las anteriores
+24,24,Para terminar un parrafo,Para terminar una oracion,Para separar una oracion de otra, Para una pausa cuando se lee
+25,25,El mito es verdadero y la fábula no,No existe diferencia,La fábula es una leyenda y no tiene fin,El objetivo de la fábula es dejar enseñanza y el mito enseñar de cultura
+26,26,amable,casa,arbol,amor
+27,27,Adjetivo sustantivo y articulo,Articulo sujeto y verbo,Sujeto verbo y predicado,Verbo predicado y sujeto
+28,28,2,5,4,3
+29,29,25,28,24,12
+30,30,4,3,5,125
+31,31,3,4,5,345
+32,32,Brazo,Estomago,Pies,Cabeza
+33,33,Si,No,Todas las anteriores,Ninguna de las anteriores
+34,34,El movimiento de la tierra alrededor del sol,El movimiento del sol en su eje,Cuando un organo se mueve,Cuando un animal se muere
+35,35,Norte y sur,Norte sur este y oeste,Este y Oeste,Occidente y oriente
 36,36,Mito,Leyenda,Adivinanza,Poema
 37,37,Argentina,casa,arbol,pieza
-38,38,[Las astillas lastiman,El hijo es parecido a sus padres,De los padres salen los niños,De los árboles salen astillas]
-39,39,[Pezes,Peces]
-40,40,[6,2,0,3]
+38,38,Las astillas lastiman,El hijo es parecido a sus padres,De los padres salen los niños,De los árboles salen astillas
+39,39,Pezes,Peces
+40,40,6,2,0,3
 41,41,1000,100,200,1
-42,42,Si,No
+42,42,Si,No,Todas las anteriores,Ninguna de las anteriores
 43,43,8/1,3/1,5/8,3/8
 44,44,Una mezcla dónde se ven sus componentes,Una mezcla donde no se ven sus componentes
 45,45,[Una mezcla dónde se ven sus componentes,Una mezcla donde no se ven sus componentes]
 46,46,[Animales muerto,Plantas muertas,Restos de plantas y animales en la corteza terreste,La corteza terrestre]
 47,47,[Movimiento de la tierra en su eje,Movimiento de la tierra alrededor del sol,Desgaste de la tierra por agua o viento,Ciclo natural]
-48,48,[Sacando las ideas principales de un texto,Sacando las ideas principales y secundarias de un texto,Reescribiendo un texto,Sacando las ideas secundarias de un texto]
-49,49,[Negación,Aclaración,Afirmación,Contradicción]
-50,50,[Pasado,Presente,Futuro,Infinitivo]
-51,51,[Sido,Fue,Fuese,Serio]
-52,52,[5,25,4,3]
-53,53,[15,10,5,30]
-54,54,[Sí,No]
-55,55,[20,100,30,200]
-56,56,[Policarpa Salavarrieta,Simon Bolivar,General San Martín,Cristobal Colón]
-57,57,[5,1,3,0]
-58,58,[Sí,No]
-59,59,[Cosas que se deben cumplir en ciertos lugares,Las leyes que se deben cumplir,Reglas para controlar el orden,La constitución]
-60,60,[30% de tierra y 70% de agua,90 de tierra y 10% de agua,3% de tierra y 97% de agua,5% de tierra y 95% de agua]
-61,61,[Dulce,Salada,Ambas,Ninguna]
-62,62,[La luna,El sol,La gravedad,La luna el sol y la gravedad]
-63,63,[Digestivo,Respiratorio,Circulatorio,Reproductivo]
-64,64,[Aro,Anillo,Tierca,Portal]
-65,65,[Un texto informativo,Un texto expositivo,Un texto argumentativo,Un texto narrativo]
-66,66,[Quien lo escribe,Quien lo lee]
-67,67,[Una palabra para unir dos oraciones,Una palabra para unir dos palabras]
-68,68,[2 x 4, 2 x 3, 2 x 2 x 2, 4 x 2]
-69,69,[0.06,0.006,0.6,600]
-70,70,[10,2,5,4]
-71,71,[Sí,No]
-72,72,[La ley de leyes,El libro que contiene las leyes que rigen el país,El libro que contiene lo que no hay qué hacer,El libro que contiene las leyes mundiales]
-73,73,[América,Europa,Asia,Oceanía]
-74,74,[Mar Caribe, Océano Atlántico y Pacífico,Océano Índico y Ártico,Océano Atlántico y Ártico]
-75,75,[La salud,La vida,El trabajo,Todas las anteriores]
-76,76,[Una capa de la tierra,La capa que nos protege de los rayos ultravioleta,El aire que respiramos]
-77,77,
-78,78
-79,79,
-80,80,
-81,81,
-82,82,
-83,83,
-84,84,
-85,85,
-86,86,
-87,87,
-88,88,
-89,89,
-90,90,
-91,91
-92,92,
-93,93,
-94,94,
-95,95,
-
+48,48,Sacando las ideas principales de un texto,Sacando las ideas principales y secundarias de un texto,Reescribiendo un texto,Sacando las ideas secundarias de un texto
+49,49,Negación,Aclaración,Afirmación,Contradicción
+50,50,Pasado,Presente,Futuro,Infinitivo
+51,51,Sido,Fue,Fuese,Serio
+52,52,5,25,4,3
+53,53,15,10,5,30
+54,54,Sí,No,Todas las anteriores,Ninguna de las anteriores
+55,55,20,100,30,200
+56,56,Policarpa Salavarrieta,Simon Bolivar,General San Martín,Cristobal Colón
+57,57,5,1,3,0
+58,58,Sí,No,Todas las anteriores,Ninguna de las anteriores
+59,59,Cosas que se deben cumplir en ciertos lugares,Las leyes que se deben cumplir,Reglas para controlar el orden,La constitución
+60,60,30% de tierra y 70% de agua,90 de tierra y 10% de agua,3% de tierra y 97% de agua,5% de tierra y 95% de agua
+61,61,Dulce,Salada,Ambas,Ninguna
+62,62,La luna,El sol,La gravedad,La luna el sol y la gravedad
+63,63,Digestivo,Respiratorio,Circulatorio,Reproductivo
+64,64,Aro,Anillo,Tierca,Portal
+65,65,Un texto informativo,Un texto expositivo,Un texto argumentativo,Un texto narrativo
+66,66,Quien lo escribe,Quien lo lee,Todas las anteriores,Ninguna de las anteriores
+67,67,Una palabra para unir dos oraciones,Una palabra para unir dos palabras
+68,68,2 x 4, 2 x 3, 2 x 2 x 2, 4 x 2
+69,69,0.06,0.006,0.6,600
+70,70,10,2,5,4
+71,71,Sí,No,Todas las anteriores,Ninguna de las anteriores
+72,72,La ley de leyes,El libro que contiene las leyes que rigen el país,El libro que contiene lo que no hay qué hacer,El libro que contiene las leyes mundiales
+73,73,América,Europa,Asia,Oceanía
+74,74,Mar Caribe, Océano Atlántico y Pacífico,Océano Índico y Ártico,Océano Atlántico y Ártico
+75,75,La salud,La vida,El trabajo,Todas las anteriores
+76,76,Una capa de la tierra,La capa que nos protege de los rayos ultravioleta,El aire que respiramos,El aire que respiran los animales
+77,77,El proceso de nutricion de las plantas,El proceso del agua y la lluvia,El proceso del sol y la lluvia,El proceso que mantiene vivos los animales
+78,78,La comida,El deporte,Las plantas,Los animales
+79,79,Solido Liquido Gaseoso,Liquido,Solido,Gaseoso
+88,88,Un liquido se vuelve a estado gaseoso,Un liquido se vuelve a estado solido,Ninguna de las anteriores,Todas las anteriores
+89,89,Separacion de dos liquidos,Separacion de dos gases,Separacion de dos solidos,Separacion de un solido y un gaseoso
+90,90,El cambio fisico se puede revertir y el quimico no,El cambio quimico se puede revertir y el fisico no,No tienen diferencias,Ninguna de las anteriores
+91,91,Si,no,Todas las anteriores,Ninguna de las anteriores
+92,92,Simon Bolivar,General San Martin,Policarpa Salavarrieta,Cristobal Colon
+93,93,1492,1942,1542,1642
+120,120,1901,1903,1914,1915
+121,121,1915,1914,1939,1949
+122,122,El eje y los aliados,Los nazis y los no nazis,Ninguna de las anteriores,Todas las anteriores
+124,124,Una teoria del origen del universo,Una teoria del origen de los animales,Una teoria de las matematicas,Una teoria de la fisica
+125,125,Generacion espontanea,Evolucion,Matematicas,Fisica
+126,126,En las proteinas,En las celulas,En la sangre,En los musculos
+140,140,Agua,Oxigeno,Sal,Hidrogeno
+141,141,Agua,Oxigeno,Carbono,Gas oxigeno
+142,142,Gas hidrogeno,Hidrogeno,Agua,Carbono
+148,148,Aristoteles Socrates y Tales de Mileto,Tales de Mileto Heraclito y Parmenides,Aristoteles Socrates y Platon,Heraclito Parmenides y Socrates
+154,154,Un titulo valor,Un cheque,Todas las anteriores,Ninguna de las anteriores
+165,165,Metal,Hidrogeno,Sal,Carbono
+169,169,Parte del texto narrativo,Fundamento del texto argumentativo,Parte del texto expositivo,Fundamento de la fabula
 

@@ -1,7 +1,6 @@
 rol,usuario,contrasena,correo,edad,grado,id_estudiante
-estudiante,robinquintero,4321,robin@mail.com,17,11,0
-estudiante,juan,1234,juan@mail.com,12,7,3
-estudiante,maria,5678,maria@mail.com,10,4
-estudiante,mariana,1234,mariana@mail.com,12,5,123243
-gabriela,gabriela,4954,gabriela@mail.comn,11,6,324231
-estudiante,simon,5667,simon@mail.com,14,9,5654
+estudiante,robinquintero,4321,robin@mail.com,5,0,0
+estudiante,duvervalencia,1234,duver@mail.com,17,11,1
+estudiante,albertgarcia,5678,albert@mail.com,15,10,2
+estudiante,jhonlondono,8765,jhon@mail.com,14,9,3
+estudiante,estebanflorez,1011,esteban@mail.com,10,5,4

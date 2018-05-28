@@ -1,6 +1,6 @@
 id_pregunta,materia,grado,pregunta
 0,esp0,0,¿Cuál es la vocal que le sigue a la "e"?
-1,esp0,0,¿Cuántas son las vocales?
+1,esp0,0,¿Cuáles son las vocales?
 2,esp0,0,¿Cuáles son los colores primarios?
 3,esp0,0,En una conversación debes...
 4,mat0,0,Si mezclo azul y amarillo, ¿qué color obtengo?
@@ -70,7 +70,7 @@ id_pregunta,materia,grado,pregunta
 68,mat6,6,¿Cómo se descompone 8 en factores primos?
 69,mat6,6,¿Cuánto es 6/100?
 70,mat6,6,¿Cuánto es el 50% de 10?
-71,mat6,6,¿Es 2,34 mayor que 3,344?
+71,mat6,6,¿Es 2,34 mayor que 2,344?
 72,soc2,6,¿Qué es la constitución Política de Colombia?
 73,soc2,6,¿En qué continente está ubicada Colombia?
 74,soc2,6,¿Qué oceanos rodean a Colombia?
@@ -79,3 +79,41 @@ id_pregunta,materia,grado,pregunta
 77,nat4,6,¿Qué es la fotosíntesis?
 78,nat4,6,¿Qué le provee energía al cuerpo humano?
 79,nat4,6,¿Cuáles son los estados de la materia?
+88,nat5,7,¿Qué es la evaporación?
+89,nat5,7,¿Qué es la decantación?
+90,nat5,7,¿Cuál es la diferencia entre cambio físico y químico?
+91,nat5,7,¿Se puede revertir el cambio químico?
+92,soc3,7,¿Quién descubrió América?
+93,soc3,7,¿En qué año se descubrió América?
+94,soc3,7,¿Qué son los burgueses?
+95,soc3,7,¿Qué son los feudales?
+120,soc5,9,¿En qué año se inició la Primera Guerra Mundial?
+121,soc5,9,¿En qué año se inició la Segunda Guerra Mundial?
+122,soc5,9,¿Cuáles eran los dos bandos en la Segunda Guerra Mundial?
+123,soc5,9,¿Quién ganó la Segunda Guerra Mundial?
+124,nat6,9,¿Qué es la generación espontánea?
+125,nat6,9,Darwin tiene la teoría de ... relacionada con aves
+126,nat6,9,¿Dónde se genera el ADN?
+127,nat6,9,¿Qué significan las siglas ARN?
+128,geo1,9,¿Cuál es el punto más alto de Colombia?
+129,geo1,9,¿Con qué países limita Colombia al sur?
+130,geo1,9,¿Qué país cercano fue parte de Colombia hasta hace 100 años?
+131,geo1,9,¿En qué región se encuentra el Valle del Cauca?
+140,qui1,10,¿Qué es H2O?
+141,qui1,10,¿Qué es O2?
+142,qui1,10,¿Qué es H2?
+143,qui1,10,¿Qué es NaCl?
+148,fil1,10,¿Cuáles son los filósofos socráticos?
+149,fil1,10,¿En qué se centra la filosofía de Aristóteles?
+152,soc6,10,¿Qué es la Macroeconomía?
+153,soc6,10,¿Qué es la Microeconomía?
+154,soc6,10,¿Qué es un CDT?
+155,soc6,10,¿Qué es un cheque?
+164,qui2,11,¿Qué son los isótopos?
+165,qui2,11,¿Cuál es el elemento fundamental de la química orgánica?
+166,qui2,11,¿Qué elemento no está presente en la química inorgánica?
+167,qui2,11,¿Qué es la hibridación?
+168,esp11,11,¿Qué es un texto argumentativo?
+169,esp11,11,¿Qúe es una tesis?
+176,soc7,11,¿Qué es el capitalismo?
+177,soc7,11,¿Qué es la globalización?
