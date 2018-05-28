@@ -35,40 +35,65 @@ id_pregunta,id_respuesta,opciones
 33,33,[Si,No]
 34,34,[El movimiento de la tierra alrededor del sol,El movimiento del sol en su eje,Cuando un organo se mueve,Cuando un animal se muere]
 35,35,[[Norte, sur],[Norte, sur, este, oeste],[Este, Oeste],[Occidente, oriente]]
-36,36,[Mito,Leyenda,Adivinanza,Poema]
-37,37,[Argentina,casa,arbol,pieza]
+36,36,Mito,Leyenda,Adivinanza,Poema
+37,37,Argentina,casa,arbol,pieza
 38,38,[Las astillas lastiman,El hijo es parecido a sus padres,De los padres salen los niños,De los árboles salen astillas]
 39,39,[Pezes,Peces]
 40,40,[6,2,0,3]
-41,41,[1000,100,200,1]
-42,42,[Si,No]
-43,43,[8/1,3/1,5/8,3/8]
-44,44,[Una mezcla dónde se ven sus componentes,Una mezcla donde no se ven sus componentes]
+41,41,1000,100,200,1
+42,42,Si,No
+43,43,8/1,3/1,5/8,3/8
+44,44,Una mezcla dónde se ven sus componentes,Una mezcla donde no se ven sus componentes
 45,45,[Una mezcla dónde se ven sus componentes,Una mezcla donde no se ven sus componentes]
 46,46,[Animales muerto,Plantas muertas,Restos de plantas y animales en la corteza terreste,La corteza terrestre]
 47,47,[Movimiento de la tierra en su eje,Movimiento de la tierra alrededor del sol,Desgaste de la tierra por agua o viento,Ciclo natural]
-48,48,[]
-49,49,[]
+48,48,[Sacando las ideas principales de un texto,Sacando las ideas principales y secundarias de un texto,Reescribiendo un texto,Sacando las ideas secundarias de un texto]
+49,49,[Negación,Aclaración,Afirmación,Contradicción]
 50,50,[Pasado,Presente,Futuro,Infinitivo]
-51,51,[]
-52,52,[]
-53,53,[]
-54,54,[]
-55,55,[]
-56,56,[]
-57,57,[]
-58,58,[]
-59,59,[]
-60,60,[]
-61,61,[]
-62,62,[]
-63,63,[]
-64,64,[]
-65,65,[]
-66,66,[]
-67,67,[]
-68,68,[]
-69,69,[]
-70,70,[]
+51,51,[Sido,Fue,Fuese,Serio]
+52,52,[5,25,4,3]
+53,53,[15,10,5,30]
+54,54,[Sí,No]
+55,55,[20,100,30,200]
+56,56,[Policarpa Salavarrieta,Simon Bolivar,General San Martín,Cristobal Colón]
+57,57,[5,1,3,0]
+58,58,[Sí,No]
+59,59,[Cosas que se deben cumplir en ciertos lugares,Las leyes que se deben cumplir,Reglas para controlar el orden,La constitución]
+60,60,[30% de tierra y 70% de agua,90 de tierra y 10% de agua,3% de tierra y 97% de agua,5% de tierra y 95% de agua]
+61,61,[Dulce,Salada,Ambas,Ninguna]
+62,62,[La luna,El sol,La gravedad,La luna el sol y la gravedad]
+63,63,[Digestivo,Respiratorio,Circulatorio,Reproductivo]
+64,64,[Aro,Anillo,Tierca,Portal]
+65,65,[Un texto informativo,Un texto expositivo,Un texto argumentativo,Un texto narrativo]
+66,66,[Quien lo escribe,Quien lo lee]
+67,67,[Una palabra para unir dos oraciones,Una palabra para unir dos palabras]
+68,68,[2 x 4, 2 x 3, 2 x 2 x 2, 4 x 2]
+69,69,[0.06,0.006,0.6,600]
+70,70,[10,2,5,4]
+71,71,[Sí,No]
+72,72,[La ley de leyes,El libro que contiene las leyes que rigen el país,El libro que contiene lo que no hay qué hacer,El libro que contiene las leyes mundiales]
+73,73,[América,Europa,Asia,Oceanía]
+74,74,[Mar Caribe, Océano Atlántico y Pacífico,Océano Índico y Ártico,Océano Atlántico y Ártico]
+75,75,[La salud,La vida,El trabajo,Todas las anteriores]
+76,76,[Una capa de la tierra,La capa que nos protege de los rayos ultravioleta,El aire que respiramos]
+77,77,
+78,78
+79,79,
+80,80,
+81,81,
+82,82,
+83,83,
+84,84,
+85,85,
+86,86,
+87,87,
+88,88,
+89,89,
+90,90,
+91,91
+92,92,
+93,93,
+94,94,
+95,95,
 
 

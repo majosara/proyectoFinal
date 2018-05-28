@@ -1,234 +1,181 @@
 id_pregunta,materia,grado,pregunta
-
-00,esp0,0,¿Cuál es la vocal que le sigue a la "e"?
-01,esp0,0,¿Cuántas son las vocales?
-02,esp0,0,¿Cuáles son los colores primarios?
-03,esp0,0,En una conversación debes...
-
-04,mat0,0,Si mezclo azul y amarillo, ¿qué color obtengo?
-05,mat0,0,¿Cuántas manzanas tengo si tu mamá te dio una y tu papá otra?
-06,mat0,0,¿Cuánto es 5+1?
-07,mat0,0,Si tengo tres borradores y necesito uno ¿cuántos puedo prestar?
-
-
-08,esp1,1,¿Cuántas letras tiene el abecedario?
-09,esp1,1,¿Qué letra sigue después de la "v" en el abecedario?
-10,esp1,1,¿"Casa" es lo mismo que "caza"?
-11,esp1,1,¿La letra "M" es mayúscula o minúscula?
-
-12,mat1,1,¿Cuántos son los días de la semana?
-13,mat1,1,Si tengo tres manzanas y le regalo una a mi amigo, ¿cuántas me quedan?
-14,mat1,1,¿Cuántos son los colores primarios?
-15,mat1,1,¿Cuántos son los meses del año?
-
-
-16,esp2,2,¿Cuántas sílabas tiene la palabra "casa"?
-17,esp2,2,¿Qué es el diccionario?
-18,esp2,2,¿Cuántas partes tiene el cuento?
-19,esp2,2,¿La letra "j" se pronuncia igual que la "g"?
-
-20,mat2,2,¿Cuánto es 2 x 2?
-21,mat2,2,¿Cuánto es 10 - 5?
-22,mat2,2,¿Cuántos segundos es un minuto?
-23,mat2,2,¿El círculo es redondo o recto?
-
-24,esp3,3,¿Para qué sirve el punto final?
-25,esp3,3,¿Cuál es la diferencia entre el mito y la fábula?
-26,esp3,3,¿Cuál de los siguientes es un adjetivo?
-27,esp3,3,¿Cómo se divide la oración?
-
-28,mat3,3,¿Cuántos lados tiene un triángulo?
-29,mat3,3,¿Cuántas horas son un día?
-30,mat3,3,¿Cuántas cifras tiegne el número "125"?
-31,mat3,3,¿Cuántas unidades de cien hay en el número "345"?
-
-32,nat1,3,¿Cuál de los siguientes es un órgano del cuerpo humano?
-33,nat1,3,¿El ser humano, los animales y las plantas reaccionan entre sí?
-34,nat1,3,¿Qué es la traslación?
-35,nat1,3,¿Cuáles son todos los puntos cardinales?
-
-36,esp4,4,¿Qué tipo de texto es "¿Cuál es el animal que más tarda en quitarse los zapatos?"?
-37,esp4,4,¿Cuál de los siguientes es un sustantivo propio?
-38,esp4,4,¿Qué significa el refrán "De tal palo, tal astilla"?
-39,esp4,4,¿Cuál es el plural de "pez"?
-
-40,mat4,4,¿Cuánto es 6 / 2?
-41,mat4,4,¿Cuántos kilos son mil gramos?
-42,mat4,4,¿1/4 es lo mismo que 2/8?
-43,mat4,4,Si tengo una torta y la parto en 8 porciones y me como 3 ¿cómo se expresa en fracción?
-
-44,nat2,4,¿Qué es una mezcla heterógenea?
-45,nat2,4,¿Qué es una mezcla homogénea?
-46,nat2,4,¿Qué son los fósiles?
-47,nat2,4,¿Qué es la erosión?
-
-
-48,esp5,5,¿Cómo se hace un resumen?
-49,esp5,5,En la frase "a Juan le gusta el chocolate pero sin maní" la palabra "pero" cumple el papel de:
-50,esp5,5,En la frase "a David le gusta jugar fútbol" el verbo está en:
-51,esp5,5,¿Qué conjugación del verbo "ser" está mal?
-
-52,mat5,5,¿Cuál es la raíz cuadrada de 25?
+00,esp0,0,Â¿CuÃ¡l es la vocal que le sigue a la "e"?
+01,esp0,0,Â¿CuÃ¡ntas son las vocales?
+02,esp0,0,Â¿CuÃ¡les son los colores primarios?
+03,esp0,0,En una conversaciÃ³n debes...
+04,mat0,0,Si mezclo azul y amarillo, Â¿quÃ© color obtengo?
+05,mat0,0,Â¿CuÃ¡ntas manzanas tengo si tu mamÃ¡ te dio una y tu papÃ¡ otra?
+06,mat0,0,Â¿CuÃ¡nto es 5+1?
+07,mat0,0,Si tengo tres borradores y necesito uno Â¿cuÃ¡ntos puedo prestar?
+08,esp1,1,Â¿CuÃ¡ntas letras tiene el abecedario?
+09,esp1,1,Â¿QuÃ© letra sigue despuÃ©s de la "v" en el abecedario?
+10,esp1,1,Â¿"Casa" es lo mismo que "caza"?
+11,esp1,1,Â¿La letra "M" es mayÃºscula o minÃºscula?
+12,mat1,1,Â¿CuÃ¡ntos son los dÃ­as de la semana?
+13,mat1,1,Si tengo tres manzanas y le regalo una a mi amigo, Â¿cuÃ¡ntas me quedan?
+14,mat1,1,Â¿CuÃ¡ntos son los colores primarios?
+15,mat1,1,Â¿CuÃ¡ntos son los meses del aÃ±o?
+16,esp2,2,Â¿CuÃ¡ntas sÃ­labas tiene la palabra "casa"?
+17,esp2,2,Â¿QuÃ© es el diccionario?
+18,esp2,2,Â¿CuÃ¡ntas partes tiene el cuento?
+19,esp2,2,Â¿La letra "j" se pronuncia igual que la "g"?
+20,mat2,2,Â¿CuÃ¡nto es 2 x 2?
+21,mat2,2,Â¿CuÃ¡nto es 10 - 5?
+22,mat2,2,Â¿CuÃ¡ntos segundos es un minuto?
+23,mat2,2,Â¿El cÃ­rculo es redondo o recto?
+24,esp3,3,Â¿Para quÃ© sirve el punto final?
+25,esp3,3,Â¿CuÃ¡l es la diferencia entre el mito y la fÃ¡bula?
+26,esp3,3,Â¿CuÃ¡l de los siguientes es un adjetivo?
+27,esp3,3,Â¿CÃ³mo se divide la oraciÃ³n?
+28,mat3,3,Â¿CuÃ¡ntos lados tiene un triÃ¡ngulo?
+29,mat3,3,Â¿CuÃ¡ntas horas son un dÃ­a?
+30,mat3,3,Â¿CuÃ¡ntas cifras tiegne el nÃºmero "125"?
+31,mat3,3,Â¿CuÃ¡ntas unidades de cien hay en el nÃºmero "345"?
+32,nat1,3,Â¿CuÃ¡l de los siguientes es un Ã³rgano del cuerpo humano?
+33,nat1,3,Â¿El ser humano, los animales y las plantas reaccionan entre sÃ­?
+34,nat1,3,Â¿QuÃ© es la traslaciÃ³n?
+35,nat1,3,Â¿CuÃ¡les son todos los puntos cardinales?
+36,esp4,4,Â¿QuÃ© tipo de texto es "Â¿CuÃ¡l es el animal que mÃ¡s tarda en quitarse los zapatos?"?
+37,esp4,4,Â¿CuÃ¡l de los siguientes es un sustantivo propio?
+38,esp4,4,Â¿QuÃ© significa el refrÃ¡n "De tal palo, tal astilla"?
+39,esp4,4,Â¿CuÃ¡l es el plural de "pez"?
+40,mat4,4,Â¿CuÃ¡nto es 6 / 2?
+41,mat4,4,Â¿CuÃ¡ntos kilos son mil gramos?
+42,mat4,4,Â¿1/4 es lo mismo que 2/8?
+43,mat4,4,Si tengo una torta y la parto en 8 porciones y me como 3 Â¿cÃ³mo se expresa en fracciÃ³n?
+44,nat2,4,Â¿QuÃ© es una mezcla heterÃ³genea?
+45,nat2,4,Â¿QuÃ© es una mezcla homogÃ©nea?
+46,nat2,4,Â¿QuÃ© son los fÃ³siles?
+47,nat2,4,Â¿QuÃ© es la erosiÃ³n?
+48,esp5,5,Â¿CÃ³mo se hace un resumen?
+49,esp5,5,En la frase "a Juan le gusta el chocolate pero sin manÃ­" la palabra "pero" cumple el papel de:
+50,esp5,5,En la frase "a David le gusta jugar fÃºtbol" el verbo estÃ¡ en:
+51,esp5,5,Â¿QuÃ© conjugaciÃ³n del verbo "ser" estÃ¡ mal?
+52,mat5,5,Â¿CuÃ¡l es la raÃ­z cuadrada de 25?
 53,mat5,5,El doble de la suma de 10 y 5
-54,mat5,5,¿Es 2 mayor que 3/2?
-55,mat5,5,¿Cuánto es 20 x 10?
-
-56,soc1,5,¿Quién descubrió América?
-57,soc1,5,¿Cuántos pisos térmicos tiene Colombia?
-58,soc1,5,¿Todas las personas tienen derechos?
-59,soc1,5,¿Qué son las normas?
-
-
-60,nat3,5,¿Cuánto hay de tierra y de agua en el planeta?
-61,nat3,5,¿En lo glaciares hay agua...?
-62,nat3,5,¿Qué causa la marea en las aguas?
-63,nat3,5,¿Es el estómago parte del sistema...?
-
-64,esp6,6,¿Cuál de las siguientes palabras es sinónimo de "anillo"?
-65,esp6,6,¿Qué es la carta?
-66,esp6,6,¿Qué es el emisor en un texto?
-67,esp6,6,¿Qué es un conector?
-
-68,mat6,6,¿Cómo se descompone 8 en factores primos?
-69,mat6,6,¿Cuánto es 6/100?
-70,mat6,6,¿Cuánto es el 50% de 10?
-71,mat6,6,¿Es 2,34 mayor que 3,344?
-
-72,soc2,6,¿Qué es la constitución Política de Colombia?
-73,soc2,6,¿En qué continente está ubicada Colombia?
-74,soc2,6,¿Qué oceanos rodean a Colombia?
-75,soc2,6,¿Cuál de los siguientes es un derecho es fundamental?
-
-76,nat4,6,¿Qué es la atmósfera?
-77,nat4,6,¿Qué es la fotosíntesis?
-78,nat4,6,¿Qué le provee energía al cuerpo humano?
-79,nat4,6,¿Cuáles son los estados de la materia?
-
-
+54,mat5,5,Â¿Es 2 mayor que 3/2?
+55,mat5,5,Â¿CuÃ¡nto es 20 x 10?
+56,soc1,5,Â¿QuiÃ©n descubriÃ³ AmÃ©rica?
+57,soc1,5,Â¿CuÃ¡ntos pisos tÃ©rmicos tiene Colombia?
+58,soc1,5,Â¿Todas las personas tienen derechos?
+59,soc1,5,Â¿QuÃ© son las normas?
+60,nat3,5,Â¿CuÃ¡nto hay de tierra y de agua en el planeta?
+61,nat3,5,Â¿En lo glaciares hay agua...?
+62,nat3,5,Â¿QuÃ© causa la marea en las aguas?
+63,nat3,5,Â¿Es el estÃ³mago parte del sistema...?
+64,esp6,6,Â¿CuÃ¡l de las siguientes palabras es sinÃ³nimo de "anillo"?
+65,esp6,6,Â¿QuÃ© es la carta?
+66,esp6,6,Â¿QuÃ© es el emisor en un texto?
+67,esp6,6,Â¿QuÃ© es un conector?
+68,mat6,6,Â¿CÃ³mo se descompone 8 en factores primos?
+69,mat6,6,Â¿CuÃ¡nto es 6/100?
+70,mat6,6,Â¿CuÃ¡nto es el 50% de 10?
+71,mat6,6,Â¿Es 2,34 mayor que 2,344?
+72,soc2,6,Â¿QuÃ© es la constituciÃ³n PolÃ­tica de Colombia?
+73,soc2,6,Â¿En quÃ© continente estÃ¡ ubicada Colombia?
+74,soc2,6,Â¿QuÃ© oceanos rodean a Colombia?
+75,soc2,6,Â¿CuÃ¡l de los siguientes es un derecho es fundamental?
+76,nat4,6,Â¿QuÃ© es la atmÃ³sfera?
+77,nat4,6,Â¿QuÃ© es la fotosÃ­ntesis?
+78,nat4,6,Â¿QuÃ© le provee energÃ­a al cuerpo humano?
+79,nat4,6,Â¿CuÃ¡les son los estados de la materia?
 80,mat7,7,
 81,mat7,7,
 82,mat7,7,
 83,mat7,7,
-
 84,esp7,7,
 85,esp7,7,
 86,esp7,7,
 87,esp7,7,
-
-88,nat5,7,¿Qué es la evaporación?
-89,nat5,7,
-90,nat5,7,
-91,nat5,7,
-
-92,soc3,7,
-93,soc3,7,
-94,soc3,7,
-95,soc3,7,
-
+88,nat5,7,Â¿QuÃ© es la evaporaciÃ³n?
+89,nat5,7,Â¿QuÃ© es la decantaciÃ³n?
+90,nat5,7,Â¿CuÃ¡l es la diferencia entre cambio fÃ­sico y quÃ­mico?
+91,nat5,7,Â¿Se puede revertir el cambio quÃ­mico?
+92,soc3,7,Â¿QuiÃ©n descubriÃ³ AmÃ©rica?
+93,soc3,7,Â¿En quÃ© aÃ±o se descubriÃ³ AmÃ©rica?
+94,soc3,7,Â¿QuÃ© son los burgueses?
+95,soc3,7,Â¿QuÃ© son los feudales?
 96,esp8,8,
 97,esp8,8,
 98,esp8,8,
 99,esp8,8,
-
 100,mat8,8,
 101,mat8,8,
 102,mat8,8,
 103,mat8,8,
-
 104,soc4,8,
 105,soc4,8,
 106,soc4,8,
 107,soc4,8,
-
 108,nat5,8,
 109,nat5,8,
 110,nat5,8,
 111,nat5,8,
-
-
 112,esp9,9,
 113,esp9,9,
 114,esp9,9,
 115,esp9,9,
-
 116,mat9,9,
 117,mat9,9,
 118,mat9,9,
 119,mat9,9,
-
-120,soc5,9,
-121,soc5,9,
-122,soc5,9,
-123,soc5,9,
-
-124,nat6,9,
-125,nat6,9,
-126,nat6,9,
-127,nat6,9,
-
-128,geo1,9,
-129,geo1,9,
-130,geo1,9,
-131,geo1,9,
-
-
+120,soc5,9,Â¿En quÃ© aÃ±o se iniciÃ³ la Primera Guerra Mundial?
+121,soc5,9,Â¿En quÃ© aÃ±o se iniciÃ³ la Segunda Guerra Mundial?
+122,soc5,9,Â¿CuÃ¡les eran los dos bandos en la Segunda Guerra Mundial?
+123,soc5,9,Â¿QuiÃ©n ganÃ³ la Segunda Guerra Mundial?
+124,nat6,9,Â¿QuÃ© es la generaciÃ³n espontÃ¡nea?
+125,nat6,9,Darwin tiene la teorÃ­a de ... relacionada con aves
+126,nat6,9,Â¿DÃ³nde se genera el ADN?
+127,nat6,9,Â¿QuÃ© significan las siglas ARN?
+128,geo1,9,Â¿CuÃ¡l es el punto mÃ¡s alto de Colombia?
+129,geo1,9,Â¿Con quÃ© paÃ­ses limita Colombia al sur?
+130,geo1,9,Â¿QuÃ© paÃ­s cercano fue parte de Colombia hasta hace 100 aÃ±os?
+131,geo1,9,Â¿En quÃ© regiÃ³n se encuentra el Valle del Cauca?
 132,trig1,10,
 133,trig1,10,
 134,trig1,10,
 135,trig1,10,
-
 136,fis1,10,
 137,fis1,10,
 138,fis1,10,
 139,fis1,10,
-
-140,qui1,10,
-141,qui1,10,
-142,qui1,10,
-143,qui1,10,
-
+140,qui1,10,Â¿QuÃ© es H2O?
+141,qui1,10,Â¿QuÃ© es O2?
+142,qui1,10,Â¿QuÃ© es H2?
+143,qui1,10,Â¿QuÃ© es NaCl?
 144,esp10,10,
 145,esp10,10,
 146,esp10,10,
 147,esp10,10,
-
-148,fil1,10,¿Cuáles son los filósofos socráticos?
-149,fil1,10,¿En qué se centra la filosofía de Aristóteles?
+148,fil1,10,Â¿CuÃ¡les son los filÃ³sofos socrÃ¡ticos?
+149,fil1,10,Â¿En quÃ© se centra la filosofÃ­a de AristÃ³teles?
 150,fil1,10,
 151,fil1,10,
-
-152,soc6,10,
-153,soc6,10,
-154,soc6,10,
-155,soc6,10,
-
-
+152,soc6,10,Â¿QuÃ© es la MacroeconomÃ­a?
+153,soc6,10,Â¿QuÃ© es la MicroeconomÃ­a?
+154,soc6,10,Â¿QuÃ© es un CDT?
+155,soc6,10,Â¿QuÃ© es un cheque?
 156,cal1,11,
 157,cal1,11,
 158,cal1,11,
 159,cal1,11,
-
 160,fis2,11,
 161,fis2,11,
 162,fis2,11,
 163,fis2,11,
-
-164,qui2,11,
-165,qui2,11,
-166,qui2,11,
-167,qui2,11,
-
-168,esp11,11,¿Qué es un texto argumentativo?
-169,esp11,11,
+164,qui2,11,Â¿QuÃ© son los isÃ³topos?
+165,qui2,11,Â¿CuÃ¡l es el elemento fundamental de la quÃ­mica orgÃ¡nica?
+166,qui2,11,Â¿QuÃ© elemento no estÃ¡ presente en la quÃ­mica inorgÃ¡nica?
+167,qui2,11,Â¿QuÃ© es la hibridaciÃ³n?
+168,esp11,11,Â¿QuÃ© es un texto argumentativo?
+169,esp11,11,Â¿QÃºe es una tesis?
 170,esp11,11,
 171,esp11,11,
-
 172,fil2,11,
 173,fil2,11,
 174,fil2,11,
 175,fil2,11,
-
-176,soc7,11,¿Qué es el capitalismo?
-177,soc7,11,
+176,soc7,11,Â¿QuÃ© es el capitalismo?
+177,soc7,11,Â¿QuÃ© es la globalizaciÃ³n?
 178,soc7,11,
 179,soc7,11,
