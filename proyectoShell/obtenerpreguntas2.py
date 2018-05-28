@@ -14,6 +14,7 @@ def getQuestions():
 
 	p.close()
 	preguntas.pop(0)
+	return preguntas
 	##print(preguntas)
 
 def getOptions(preguntas_grado,id_options):
@@ -36,7 +37,7 @@ def getOptions(preguntas_grado,id_options):
 def rightAnswers(preguntas_grado,id_answers):
 	"""Esta funcion se utilizara para obtener la respuesta correcta
 	de cada pregunta y las  pondra en una lista"""
-	
+
 	right_answers = [] #lista que contendra las respuestas correctas
 	ans = open('respuesta_correcta.txt')
 

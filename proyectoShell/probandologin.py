@@ -17,18 +17,17 @@ def comprobar_usuario():
     for i in range(len(newlogin)):
         if usuario == newlogin[i][0] and contrasena == newlogin[i][1]:
             loggin = True
-            rol = newlogin[i][0]
+            rol = newlogin[i][2]
         else:
             loggin = False
 
-        if usuario not in newlogin[i][0]:
-            loggin = False
-            print('Usuario incorrecto o no registrado')
-            break
-        if contrasena not in newlogin[i][1]:
-            loggin=False
-            print('Contrasena incorrecta')
-            break
+        #if usuario not in newlogin[i][0]:
+         #   loggin = False
+          #  print('Usuario incorrecto o no registrado')
+           # break
+        #else:
+         #   loggin = False
+          #  print('Contrasena incorrecta')
 
             #if usuario != newlogin[i][0]:
              #   loggin = False
@@ -44,7 +43,7 @@ def comprobar_usuario():
                 registrar_usuario(datos)
             else:
                 print('Bienvenido a Check you!,',rol,usuario)
-                #return showQuestions(usuario)
+                return showQuestions(usuario)
 
 
 

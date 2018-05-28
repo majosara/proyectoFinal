@@ -4,15 +4,24 @@
 datos = []
 
 def registrar_usuario(datos):
-    ##Cantidad de usuarios que se van a crear
-    loop = int(input("¿Cuantos estudiantes va a agregar?: "))
+    """
+    La funcion recibe la lista vacia datos y la llena con los
+    datos de los estudiantes, ademas hace un input con la cantidad de
+    usuarios que se van a agregar y un ciclo para ello
+    """
 
-    ##Apertura del archivo de los usuarios, información: rol, usuario, contraseña y correo electronico
+    #opcion = int(input('¿Que desea relizar?','\n'
+        #'1.Registrar usuario','\n'
+        #'2.Modificar usuario'))
+
+    #if opcion == 1:
+    cant = int(input("Numero de estudiantes que va a agregar:"))
+
+        #Apertura del archivo de los datos de los usuarios
     file = open("datos_estudiantes.txt","a")
 
-
-    ##Inicia un ciclo para el registro de los usuarios
-    for n in range(loop):
+        #Inicia un ciclo para el registro de los usuarios
+    for n in range(cant):
         ##Abre el archivo que contiene los usuarios y los lee, a medida que los lee
         ##añade cada linea del texto en la lista "datos"
         valFile = open("datos_estudiantes.txt","r")
@@ -34,7 +43,6 @@ def registrar_usuario(datos):
         id_estudiante = int(input("ingrese un numero que se le asignara al estudiante: "))
 
         ##En el siguiente ciclo se va a validar los datos que se ingresaron (el usuario)
-        ##
         ##Entra en la primera sublista de datos
         for i in range(len(datos)):
             ##Entra en la primera lista de la sublista
@@ -52,9 +60,27 @@ def registrar_usuario(datos):
         ##En caso de que no se encuentre el nombre de usuario, se amacenaran los datos
         ##en una variable llamada "add" y esta se añadira al documento de texto finalizando con un enter.
         if finded == False:
-            ##Data['{}'.format(usuario)]= ['{},{},{}'.format(rol,contraseña,correo)]
             add = rol + "," + usuario + "," + contraseña  + "," + correo + "," + str(edad) + "," + str(grado) + "," + str(id_estudiante)
             file.write(add + "\n")
-            input("¡Usuario agregado! presiona ENTER para salir.")
-    ##Se cierra el documento.
+            print("¡Usuario agregado!")
     file.close()
+
+    #if opcion == 2:
+
+        #user = input('Ingrese el usuario al que desea modificarle datos:')
+        ##Esta variable tendra el usuario que se quiere modificar
+
+        #datos2 = []
+
+        #file = open('datos_estudiantes.txt','a')
+
+        #for user in file:
+            #user = user.replace('\n','')
+            #datos2.append(user.split(','))
+        
+
+        #if user == datos2[1]:
+            #print('Actualice los datos del usuario!')
+
+        #else:
+            #print('Usuario no registrado, vaya al formulario de registrar usuario')
