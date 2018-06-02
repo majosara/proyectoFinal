@@ -29,13 +29,28 @@ def registrar_usuario(datos):
         valFile.close()
         finded = False #variable que se usa para retificar que no se encuentre el usuario ya registrado
         #se pide la informacion del usuario
-        rol = input("Ingrese el rol del usuario: ")
-        usuario = input("Nombre de usuario: ")
-        contraseña = input("Contraseña del usuario: ")
-        correo = input("Correo del usuario: ")
-        edad = int(input("Ingrese la edad del usuario: "))
-        grado = int(input("Ingrese el grado en el que se encuentra el estudiante: "))
-        id_estudiante = int(input("ingrese un numero que se le asignara al estudiante: "))
+        while finded == False
+            rol = input("Ingrese el rol del usuario: ")
+            usuario = input("Nombre de usuario: ")
+            contraseña = input("Contraseña del usuario: ")
+            try:
+                correo = input("Correo del usuario(terminado en '@mail.com': ")
+                p = re.compile(r'\w\{@}\w\{.com}')
+                salida = p.search(correo)
+            except Exception:
+                print('Ingrese un correo valido')
+            try:
+                edad = int(input("Ingrese la edad del usuario: "))
+            except ValueError:
+                print('Por favor ingrese un numero')
+            try:
+                grado = int(input("Ingrese el grado en el que se encuentra el estudiante: "))
+            except ValueError:
+                print('Por favor ingrese un numero')
+            try:
+                id_estudiante = int(input("ingrese un numero que se le asignara al estudiante: "))
+            except ValueError:
+                print('Por favor ingrese un numero')
 
         for i in range(len(datos)):
             for j in range(len(datos[i])):
