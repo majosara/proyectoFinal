@@ -4,3 +4,4 @@ estudiante,duvervalencia,1234,duver@mail.com,17,11,1
 estudiante,albertgarcia,5678,albert@mail.com,15,10,2
 estudiante,jhonlondono,8765,jhon@mail.com,14,9,3
 estudiante,estebanflorez,1011,esteban@mail.com,10,5,4
+estudiante,juanpablo,4567,juanpablo@mail.com,12,7,7857

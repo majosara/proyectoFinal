@@ -112,6 +112,6 @@ def showQuestions(usuario):
 
 	menu(preguntas_grado,id_options,id_answers)
 
-showQuestions('robinquintero')
+##showQuestions('robinquintero')
 ##if __name__ == '__main__':
 ##	getQuestions(1,preguntas_grado)

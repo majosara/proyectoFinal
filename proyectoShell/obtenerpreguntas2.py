@@ -98,7 +98,7 @@ def showQuestions(usuario):
 			infoUser = dataUser[i]
 			print(infoUser)
 
-	getQuestions(infoUser[5],preguntas_grado)
+	getQuestions(infoUser[6],preguntas_grado)
 
 	for i in range(len(preguntas_grado)):
 		getOptions(preguntas_grado[i][0],id_options)
