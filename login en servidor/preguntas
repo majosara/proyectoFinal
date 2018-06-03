@@ -99,7 +99,7 @@ id_pregunta,materia,grado,pregunta,A,B,C,D,respuesta
 65,Español,6,¿Qué es la carta?,Un texto informativo,Un texto expositivo,Un texto argumentativo,Un texto narrativo,A
 66,Español,6,¿Qué es el emisor en un texto?,Quien lo escribe,Quien lo lee,Todas las anteriores,Ninguna de las anteriores,A
 67,Español,6,¿Qué es un conector?,Una palabra para unir dos oraciones,Una palabra para unir dos palabras,Una oración para unir dos párrafos,Una palabra para terminar una oración,A
-68,Matematicas,6,¿Cómo se descompone 8 en factores primos?,2 x 4, 2 x 3, 2 x 2 x 2, 4 x 2,C
+68,Matematicas,6,¿Cómo se descompone 8 en factores primos?
 69,Matematicas,6,¿Cuánto es 6/100?,0.06,0.006,0.6,600,A
 70,Matematicas,6,¿Cuánto es el 50% de 10?,10,2,5,4,C
 71,Matematicas,6,¿Es 2,34 mayor que 2,344?,Sí,No,Todas las anteriores,Ninguna de las anteriores,A
@@ -111,8 +111,8 @@ id_pregunta,materia,grado,pregunta,A,B,C,D,respuesta
 77,Naturales,6,¿Qué es la fotosíntesis?,El proceso de nutricion de las plantas,El proceso del agua y la lluvia,El proceso del sol y la lluvia,El proceso que mantiene vivos los animales,A
 78,Naturales,6,¿Qué le provee energía al cuerpo humano?,La comida,El deporte,Las plantas,Los animales,A
 79,Naturales,6,¿Cuáles son los estados de la materia?,Solido Liquido Gaseoso,Liquido,Solido,Gaseoso,A
-80,Matematicas,7,¿Cuánto es -2 + 3?,1,2,3,4,A
-81,Matematicas,7,¿Cuál es el valor de x si: 2 x + 2 = 6?,2,4,5,6,A
+80,Matematicas,7,¿Cuánto es -2 + 3?,
+81,Matematicas,7,¿Cuál es el valor de x si: 2 x + 2 = 6?,
 82,Matematicas,7,¿Con qué instrumentos se construye un triángulo correctamente?,Compás y transportador,Compás y regla,Regla,Compás,B
 83,Matematicas,7,¿Cuánto es 1/2 elevado al cuadrado?,2/4,1/4,2/2,4/4,B
 84,Español,7,¿Hay diferencia entre el autor y narrador de un texto?,Sí,No,Todas las anteriores,Ninguna de las anteriores,A

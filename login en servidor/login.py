@@ -9,9 +9,9 @@ app.secret_key = os.urandom(32)
 
 userData = [] #esta lista contendra los datos de los usuarios
 #este ciclo va a agregar a la variable userData los datos dentro del archivo
-#de texto que contiene los datos de los usuarios
-infoUser = []
-gradoPreguntas = []
+#de texto que contiene los datos de los usuarios.
+infoUser = [] #esta lista contendra la informacion de los usuarios.
+gradoPreguntas = [] #esta variable contendra las preguntas segun el grado del usuario.
 
 
 datos = open('datos_estudiantes.txt')
@@ -96,7 +96,7 @@ def login(rol=None,username=):
 			return index(rol,username)
 
 #ruta para los usuarios que tienen estudiante como rol
-@app.route('/users')
+@app.route('/users/<rol>/<username>')
 def users(rol=None,username=None):
 	"""
 	Esta funcion comprueba el rol del usuario y lo lleva a su respectiva ruta.
@@ -104,12 +104,14 @@ def users(rol=None,username=None):
 	datos, que estan almacenados en una variable que abre  archivo de texto que 
 	contiene los datos de los usuarios
 	"""
-	global infoUser
-	if rol == 'Administrador':
+	global infoUser,gradoPreguntas
+
+	if rol == 'Administrador' or rol == 'administrador':
 		return render_template('administrador.html',rol = rol,username = username)
 	else:
-		if rol == 'Estudiante':
+		if rol == 'Estudiante' or rol == 'estudiante':
 			perfilData = []
+			gradoPreguntas = []
 			file = open('perfiles.txt')
 			for linea in file:
 				linea = linea.replace('\n','')
@@ -148,6 +150,11 @@ def obtenerPreguntasGrado(grado):
 	for i in range(len(preguntas)):
 		if str(preguntas[i][2]) == str(grado) and preguntas[i] not in gradoPreguntas:
 			gradoPreguntas.append(preguntas[i])
+
+	for j in range(len(gradoPreguntas)):
+		gradoPreguntas[j].pop(0)
+		gradoPreguntas[j].pop(0)
+		gradoPreguntas[j].pop(0)
 
 #Menu para estudiantes
 @app.route('/estudiante/<rol>/<username>/<grado>',methods=['POST'])
