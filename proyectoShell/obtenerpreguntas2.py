@@ -75,10 +75,19 @@ def menuPreguntasOpciones(preguntas_grado,id_options,id_answers):
 				a.{}	b.{}
 				c.{}	d.{}
 				Respuesta: """.format(preguntas_grado[i][3], id_options[i][2], id_options[i][3],id_options[i][4],id_options[i][5]))
-			if userAnswer == id_answers[i][2]:
-				print('Correcto!')
-			else:
-				print('Incorrecto!')
+			if userAnswer != a or userAnswer != b or userAnswer != c or userAnswer!= d:
+				try:
+					userAnswer = input("""{}
+					a.{}	b.{}
+					c.{}	d.{}
+					Respuesta: """.format(preguntas_grado[i][3], id_options[i][2], id_options[i][3],id_options[i][4],id_options[i][5]))
+				except Exception:
+					print('Ingrese la letra correspondiente correcta')
+					
+				if userAnswer == id_answers[i][2]:
+					print('Correcto!')
+				else:
+					print('Incorrecto!')
 
 def showQuestions(usuario):
 	""" """

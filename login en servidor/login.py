@@ -10,6 +10,10 @@ app.secret_key = os.urandom(32)
 userData = [] #esta lista contendra los datos de los usuarios
 #este ciclo va a agregar a la variable userData los datos dentro del archivo
 #de texto que contiene los datos de los usuarios
+infoUser = []
+gradoPreguntas = []
+
+
 datos = open('datos_estudiantes.txt')
 for user in datos:
 	user = user.replace('\n','')
@@ -28,6 +32,7 @@ def index(rol=None,username=None):
 	else:
 		return users(rol,username)
 
+#reistro de usuarios
 @app.route('/admin',methods=['POST'])
 def admin(rol=None,username=None):
 	"""
@@ -67,7 +72,8 @@ def admin(rol=None,username=None):
 		else:
 			return index()
 
-@app.route('login', methods=['POST'])
+#inicio de sesion de usuarios
+@app.route('/login', methods=['POST'])
 def login(rol=None,username=):
 	"""
 	Esta funcion hace la validacion del inicio de sesion de los usuarios.
@@ -98,10 +104,11 @@ def users(rol=None,username=None):
 	datos, que estan almacenados en una variable que abre  archivo de texto que 
 	contiene los datos de los usuarios
 	"""
-	if rol == 'administrador':
+	global infoUser
+	if rol == 'Administrador':
 		return render_template('administrador.html',rol = rol,username = username)
 	else:
-		if rol == 'estudiante':
+		if rol == 'Estudiante':
 			perfilData = []
 			file = open('perfiles.txt')
 			for linea in file:
@@ -112,10 +119,70 @@ def users(rol=None,username=None):
 			for i in range(len(perfilData)):
 				if perfilData[i][1] == username:
 					grado = perfilData[i][2]
-					puntaje = perfilData[i][3]
-					vidas = perfilData[i][4]
+					puntajeMatematicas = perfilData[i][3]
+					puntajeEspañol = perfilData[i][4]
+					puntajeNaturales = perfilData[i][5]
+					puntajeSociales = perfilData[i][6]
+					vidas = perfilData[i][7]
 					infoUser = perfilData[i]
-			return render_template('estudiante.html',rol=rol,username=username,grado=grado,puntaje=puntaje,vidas=vidas,infoUser=infoUser)
+			obtenerPreguntasGrado(grado)
+			return render_template('estudiante.html',rol=rol,username=username,grado=grado,puntajeMatematicas=puntajeMatematicas,puntajeEspañol=puntajeEspañol,puntajeNaturales=puntajeNaturales,puntajeSociales=puntajeSociales,vidas=vidas,infoUser=infoUser)
+
+def obtenerPreguntasGrado(grado):
+	"""
+	Esta funcion mete las preguntas que estan en las bases de datos en una lista,
+	luego va a ponerlas en una lista que contendra las preguntas segun el grado
+	del usuario.
+	"""
+	global gradoPreguntas
+
+	preguntas = []
+
+	todasPreguntas = open('preguntas.txt')
+	for linea in todasPreguntas:
+		linea = linea.replace('\n','')
+		preguntas.append(linea.split(','))
+	todasPreguntas.close()
+	preguntas.pop(0)
+
+	for i in range(len(preguntas)):
+		if str(preguntas[i][2]) == str(grado) and preguntas[i] not in gradoPreguntas:
+			gradoPreguntas.append(preguntas[i])
+
+#Menu para estudiantes
+@app.route('/estudiante/<rol>/<username>/<grado>',methods=['POST'])
+def estudiante(rol=None,username=None,materias=None,grado=None):
+	"""
+	Esta funcion verifica si el usuario que ha iniciado sesion es estudiante y lo lleva
+	a el menu donde respondera las preguntas.
+	"""
+	global infoUser,gradoPreguntas
+
+	if session.get('logged_in'):
+		##El código va a verificar que el usuario ya selecciono una materia del menú que 
+		#se mostrará en pantalla, después, va a retornar el script con las preguntas.
+		session['logged_in'] = True
+
+		materia = request.form['materias']
+
+		grado = infoUser[2]
+		puntajeMatematicas = infoUser[3]
+		puntajeEspañol = infoUser[4]
+		puntajeNaturales = infoUser[5]
+		puntajeSociales = infoUser[6]
+		vidas = infoUser[7]
+
+		for n in range(len(gradoPreguntas)):
+			gradoPreguntas[n].pop(0)
+			gradoPreguntas[n].pop(0)
+			gradoPreguntas[n].pop(0)
+
+		if materia == 'Matematicas' or materia == 'Español' or materia == 'Naturales' or materia == 'Sociales':
+			return render_template('estudiantesPreguntas.html',rol=rol,username=username,grado=grado,puntajeMatematicas=puntajeMatematicas,puntajeEspañol=puntajeEspañol,puntajeNaturales=puntajeNaturales,puntajeSociales=puntajeSociales,vidas=vidas,infoUser=infoUser,gradoPreguntas=gradoPreguntas)
+	else:
+		return index()
+
+
 
 @app.route('/logout')
 def logout():
