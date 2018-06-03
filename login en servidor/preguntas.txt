@@ -1,0 +1,199 @@
+id_pregunta,materia,grado,pregunta,A,B,C,D,respuesta
+0,Español,0,¿Cuál es la vocal que le sigue a la "e"?,z,i,o,u,B
+1,Español,0,¿Cuáles son las vocales?,a e i o u,a b c d e,a c f g e,a e o u i,A
+2,Español,0,¿Cuáles son los colores primarios?,amarillo azul rojo,amarillo azul verde,rojo morado azul,rojo amarillo naranja,A
+3,Español,0,En una conversación debes...,,Hablar sin importar quien lo haga,Esperar tu turno para hablar,Todas las anteriores,Niguna de las anteriores,B
+4,Matematicas,0,Si mezclo azul y amarillo, ¿qué color obtengo?,azul,amarillo,verde,violeta,C
+5,Matematicas,0,¿Cuanto es dos mas dos menos dos?,0,2,1,3,B
+6,Matematicas,0,¿Cuánto es 5+1?,6,5,1,3,A
+7,Matematicas,0,Si tengo tres borradores y necesito uno ¿cuántos puedo prestar?,3,2,1,0,B
+180,Sociales,0,¿En qué país vives?,Argentina,Estados Unidos,España,Colombia,D
+181,Sociales,0,¿Haces parte de una sociedad?,Sí,No,Ninguna de las anteriores,Todas las anteriores,A
+182,Sociales,0,¿Lo que haces afecta a otras personas?,Sí,No,Ninguna de las anteriores,Todas las anteriores,A
+183,Sociales,0,¿Las demás personas merecen de tu parte...?,Odio,Respeto,Cariño,Malas palabras,B
+184,Naturales,0,¿Son las plantas importante en la vida de todos?,Sí,No,Ninguna de las anteriores,Todas las anteriores,A
+185,Naturales,0,¿Son los animales importantes en la vida de todos?,Sí,No,Ninguna de las anteriores,Todas las anteriores,A
+186,Naturales,0,¿Es necesario cuidar el medio ambiente?,Sí,No,Ninguna de las anteriores,Todas las anteriores,A
+187,Naturales,0,¿Es necesario respetar a las plantas y animales?,Sí,No,Ninguna de las anteriores,Todas las anteriores,A
+8,Español,1,¿Cuántas letras tiene el abecedario?,23,26,27,24,C
+9,Español,1,¿Qué letra sigue después de la "v" en el abecedario?,u,w,s,t,B
+10,Español,1,¿"Casa" es lo mismo que "caza"?,Si,No,Todas las anteriores,Niguna de las anteriores,B
+11,Español,1,¿La letra "M" es mayúscula o minúscula?,Mayúscula, Minúscula,Todas las anteriores,Ninguna de las anteriores,A
+12,Matematicas,1,¿Cuántos son los días de la semana?,6,7,8,9,B
+13,Matematicas,1,Si tengo tres manzanas y le regalo una a mi amigo ¿cuántas me quedan?,3,1,4,2,D
+14,Matematicas,1,¿Cuántos son los colores primarios?,3,2,4,7,A
+15,Matematicas,1,¿Cuántos son los meses del año?,14,8,10,12,D
+188,Sociales,1,¿Qué son los países?,En lo que se dividen las ciudades,En lo que se dividen los continentes,En lo que se dividen los océanos,En lo que se dividen los pueblos,B
+189,Sociales,1,¿Qué son los departamentos?,En lo que se dividen los continentes,En lo que se dividen las ciudades,En lo que se dividen los países,En lo que se dividen los océanos,C
+190,Sociales,1,¿Qué son las ciudades?,En lo que se dividen los departamentos,En lo que se dividen los continentes,En lo que se dividen los océanos,En lo que se dividen los países,A
+191,Sociales,1,¿Qué son los pueblos?,Territorios que hacen parte de un país,Territorios que hacen parte de una ciudad,Territorios que hacen parte de un océanos,Territorios que hacen parte de un continente,B
+192,Naturales,1,¿Qué es reciclar?,Separar los residuos,Separar la comida,Separar las personas,Separar la ropa,A
+193,Naturales,1,¿Qué es respirar?,Tomar aire,Botar aire,Tomar y botar aire,Ninguna de las anteriores,C
+194,Naturales,1,¿Para qué sirve comer?,Nutrir el cuerpo humano,Darle energía al cuerpo humano,Darle salud al cuerpo humano,Todas las anteriores,D
+195,Naturales,1,¿El cuerpo está dividido en...?,Partes,Sistemas,Órganos,Huesos,B
+16,Español,2,¿Cuántas sílabas tiene la palabra "casa"?,0,3,4,2,D
+17,Español,2,¿Qué es el diccionario?,Un libro de cuentos,Un libro para escribir,Libro con significados de palabras,Un libro de aventuras,C
+18,Español,2,¿Cuántas partes tiene el cuento?,2,4,3,5,C
+19,Español,2,¿La letra "j" se pronuncia igual que la "g"?,Si,No,Todas las anteriores,Ninguna de las anteriores,B
+20,Matematicas,2,¿Cuánto es 2 x 2?,2,1,4,5,C
+21,Matematicas,2,¿Cuánto es 10 - 5?,5,10,4,9,A
+22,Matematicas,2,¿Cuántos segundos es un minuto?,30,90,180,60,D
+23,Matematicas,2,¿El círculo es redondo o recto?,Redondo,Recto,Todas las anteriores,Ninguna de las anteriores,A
+197,Sociales,2,¿El escudo de Colombia es un símbolo patrio?,Si,No,Todas las anteriores,Ninguna de las anteriores,A
+198,Sociales,2,¿El himno de Colombia es un símbolo patrio?,Si,No,Todas las anteriores,Ninguna de las anteriores,A
+199,Sociales,2,¿Cuáles son los colores de la bandera de Colombia?,Rojo azul y verde,Azul amarillo rojo,Azul y amarillo,Amarillo azul y rojo,D
+200,Sociales,2,¿Es la bandera un símbolo patrio?,Si,No,Todas las anteriores,Ninguna de las anteriores,A
+201,Naturales,2,¿En qué parte del cuerpo está el cerebro?,El abdomen,Las piernas,La cabeza,Los brazos,C
+201,Naturales,2,¿De dónde proviene la luz del día?,La luna,Las estrellas,El sol,Del planeta,C
+201,Naturales,2,¿Cuántos planetas hay en el sistema solar?,1,3,5,9,D
+201,Naturales,2,El planeta tierra ocupa el lugar ... en el sistema solar,1,3,5,7,B
+24,Español,3,¿Para qué sirve el punto final?,Para terminar un parrafo,Para terminar una oracion,Para separar una oracion de otra, Para una pausa cuando se lee,A
+25,Español,3,¿Cuál es la diferencia entre el mito y la fábula?,La fábula es una leyenda y no tiene fin,El objetivo de la fábula es dejar enseñanza y el mito enseñar de cultura,D
+26,Español,3,¿Cuál de los siguientes es un adjetivo?,amable,casa,arbol,amor,A
+27,Español,3,¿Cómo se divide la oración?,Adjetivo sustantivo y articulo,Articulo sujeto y verbo,Sujeto verbo y predicado,Verbo predicado y sujeto,C
+28,Matematicas,3,¿Cuántos lados tiene un triángulo?,2,5,4,3,D
+29,Matematicas,3,¿Cuántas horas son un día?,25,28,24,12,C
+30,Matematicas,3,¿Cuántas cifras tiegne el número "125"?,4,3,5,125,B
+31,Matematicas,3,¿Cuántas unidades de cien hay en el número "345"?,3,4,5,345,A
+32,Naturales,3,¿Cuál de los siguientes es un órgano del cuerpo humano?,Brazo,Estomago,Pies,Cabeza,B
+33,Naturales,3,¿El ser humano, los animales y las plantas reaccionan entre sí?,Si,No,Todas las anteriores,Ninguna de las anteriores,A
+34,Naturales,3,¿Qué es la traslación?,El movimiento de la tierra alrededor del sol,El movimiento del sol en su eje,El movimiento de la tierra en su eje,El movimiento del sol alrededor de la tierra,A
+35,Naturales,3,¿Cuáles son todos los puntos cardinales?,Norte y sur,Norte sur este y oeste,Este y Oeste,Occidente y oriente,B
+196,Sociales,3,¿Colombia es un país independiente?,Si,No,Todas las anteriores,Ninguna de las anteriores,A
+196,Sociales,3,¿Cuál de los siguientes animales es patrimonio de Colombia?,El oso polar,El oso panda,El oso con anteojos,Oso pardo
+196,Sociales,3,¿Cuándo se celebra la independencia de Colombia?,20 de junio,20 de julio,20 de agosto,20 de mayo,B
+196,Sociales,3,¿Somos todos los humanos iguales?,Si,No,Todas las anteriores,Ninguna de las anteriores,B
+36,Español,4,¿Qué tipo de texto es "¿Cuál es el animal que más tarda en quitarse los zapatos?"?
+37,Español,4,¿Cuál de los siguientes es un sustantivo propio?
+38,Español,4,¿Qué significa el refrán "De tal palo, tal astilla"?
+39,Español,4,¿Cuál es el plural de "pez"?
+40,Matematicas,4,¿Cuánto es 6 / 2?
+41,Matematicas,4,¿Cuántos kilos son mil gramos?
+42,Matematicas,4,¿1/4 es lo mismo que 2/8?
+43,Matematicas,4,Si tengo una torta y la parto en 8 porciones y me como 3 ¿cómo se expresa en fracción?
+44,Naturales,4,¿Qué es una mezcla heterógenea?
+45,Naturales,4,¿Qué es una mezcla homogénea?
+46,Naturales,4,¿Qué son los fósiles?
+47,Naturales,4,¿Qué es la erosión?
+203,Sociales,4,¿Qué es un eclipse?
+203,Sociales,4,¿Qué es la rotación?
+203,Sociales,4,¿Qué es la línea del Ecuador?
+203,Sociales,4,¿Qué es la línea del Meridiano?
+48,Español,5,¿Cómo se hace un resumen?
+49,Español,5,En la frase "a Juan le gusta el chocolate pero sin maní" la palabra "pero" cumple el papel de:
+50,Español,5,En la frase "a David le gusta jugar fútbol" el verbo está en:
+51,Español,5,¿Qué conjugación del verbo "ser" está mal?
+52,Matematicas,5,¿Cuál es la raíz cuadrada de 25?
+53,Matematicas,5,El doble de la suma de 10 y 5
+54,Matematicas,5,¿Es 2 mayor que 3/2?
+55,Matematicas,5,¿Cuánto es 20 x 10?
+56,Sociales,5,¿Quién descubrió América?
+57,Sociales,5,¿Cuántos pisos térmicos tiene Colombia?
+58,Sociales,5,¿Todas las personas tienen derechos?
+59,Sociales,5,¿Qué son las normas?
+60,Naturales,5,¿Cuánto hay de tierra y de agua en el planeta?
+61,Naturales,5,¿En lo glaciares hay agua...?
+62,Naturales,5,¿Qué causa la marea en las aguas?
+63,Naturales,5,¿Es el estómago parte del sistema...?
+64,Español,6,¿Cuál de las siguientes palabras es sinónimo de "anillo"?
+65,Español,6,¿Qué es la carta?
+66,Español,6,¿Qué es el emisor en un texto?
+67,Español,6,¿Qué es un conector?
+68,Matematicas,6,¿Cómo se descompone 8 en factores primos?
+69,Matematicas,6,¿Cuánto es 6/100?
+70,Matematicas,6,¿Cuánto es el 50% de 10?
+71,Matematicas,6,¿Es 2,34 mayor que 2,344?
+72,Sociales,6,¿Qué es la constitución Política de Colombia?
+73,Sociales,6,¿En qué continente está ubicada Colombia?
+74,Sociales,6,¿Qué oceanos rodean a Colombia?
+75,Sociales,6,¿Cuál de los siguientes es un derecho es fundamental?
+76,Naturales,6,¿Qué es la atmósfera?
+77,Naturales,6,¿Qué es la fotosíntesis?
+78,Naturales,6,¿Qué le provee energía al cuerpo humano?
+79,Naturales,6,¿Cuáles son los estados de la materia?
+80,Matematicas,7,¿Cuánto es -2 + 3?,
+81,Matematicas,7,¿Cuál es el valor de x si: 2 x + 2 = 6?,
+82,Matematicas,7,¿Con qué instrumentos se construye un triángulo correctamente?,
+83,Matematicas,7,¿Cuánto es 1/2 elevado al cuadrado?,
+84,Español,7,¿Hay diferencia entre el autor y narrador de un texto?
+85,Español,7,¿Qué representa un diálogo en un texto?
+86,Español,7,¿Cuál de las siguientes es una figura literaria?,Personificación,Artículo,Personaje,Palabras,A
+87,Español,7,Ojear un texto significa...,Leer los títulos,Leer las palabras en negrita,Palabras en mayúscula,Todas las anteriores,D
+88,Naturales,7,¿Qué es la evaporación?
+89,Naturales,7,¿Qué es la decantación?
+90,Naturales,7,¿Cuál es la diferencia entre cambio físico y químico?
+91,Naturales,7,¿Se puede revertir el cambio químico?
+92,Sociales,7,¿Quién descubrió América?
+93,Sociales,7,¿En qué año se descubrió América?
+94,Sociales,7,¿Qué son los burgueses?
+95,Sociales,7,¿Qué son los feudales?
+96,Español,8,¿Por medio de la lectura podemos conocer las intenciones del personaje de un texto?,Si,No,Todas las anteriores,Ninguna de las anteriores
+97,Español,8,¿Es importante el ambiente en un texto?,Si,No,Todas las anteriores,Ninguna de las anteriores
+98,Español,8,¿Es importante contextualizarse antes de leer un texto?,Si,No,Todas las anteriores,Ninguna de las anteriores
+99,Español,8,¿Es importante organizar las ideas antes de escribir un texto?,Si,No,Todas las anteriores,Ninguna de las anteriores
+100,Matematicas,8,¿Cuánto es negativo por negativo?,Negativo,Positivo,Ninguna de las anteriores,Todas las anteriores,B
+101,Matematicas,8,¿Cuánto es negativo divido positivo?,Negativo,Positivo,Ninguna de las anteriores,Todas las anteriores,A
+102,Matematicas,8,¿Cómo se forma un plano cartesiano?,Dos rectas perpendiculares,Dos rectas oblicuas,Tres rectas paralelas,Dos rectas paralelas,A
+103,Matematicas,8,¿Se puede ubicar un círculo en el plano cartesiano?,Sí,No,Ninguna de las anteriores,Todas las anteriores
+104,Sociales,8,¿Cuál era el organismo más importante en la Edad Media?,La iglesia,El presidente,El emperador,Los profesores,A
+105,Sociales,8,¿Cuáles eran los partidos políticos que hacían parte del Frente Nacional?,Conservadores y Polo Democrático,Liberales y Partido Verde,Conservadores y Liberales,Polo Democrático y Partido de la U,C
+106,Sociales,8,¿Qué es la diversidad cultural?,Diferentes culturas relacionandose en un mismo territorio,Diversidad de personas con la misma cultura,Diversidad de razas,Diversidad de estratos sociales en un mismo territorio,A
+107,Sociales,8,¿Hay en Colombia diferentes razas y culturas?,Sí,No,Todas las anteriores,Ninguna de las anteriores,A
+108,Naturales,8,¿Qué es la materia?,Todo aquello que tenga masa y ocupe un lugar en el espacio,Todo aquello que pese en el espacio,Todo aquello que ocupe un espacio,Todo aquello que compone algo,A
+109,Naturales,8,¿Qué es la precipitación?,Es el agua que sale de los mares,Es el agua que sale de los pozos,Es el agua que se filtra en la tierra,Es el agua que cae de las nubes
+110,Naturales,8,Las nubes son producto de...,La condensación,La evaporación,La filtración,La precipitación,A
+111,Naturales,8,¿Es negativo o positivo el impacto del dióxido de carbono en la tierra?Negativo,Positivo,Ninguna de las anteriores,Todas las anteriores,A
+112,esp9,9,¿Qué es la generación del 98?,Un grupo de pintores,Un grupo de escritores,Un grupo de filósofos,Un grupo de escultores,B
+113,esp9,9,
+114,esp9,9,
+115,esp9,9,
+116,mat9,9,¿Cuándo se racionaliza un número?,Cuando en el numerador hay una potencia,Cuando es negativo,Cuando en el denominador tiene un radical,Ninguna de las anteriores
+117,mat9,9,¿Cuánto es 2 elevado a la menos uno?,2,1/2,-2,-1
+118,mat9,9,Para resolver ecuaciones hay métodos...,Analíticos y gráficos,Lineales,Cuadráticos,Todas las anteriores,D
+119,mat9,9,¿Existe la raíz cuadrada de un número negativo en los Reales?,Sí,No,Todas las anteriores,Ninguna de las anteriores
+120,Sociales,9,¿En qué año se inició la Primera Guerra Mundial?
+121,Sociales,9,¿En qué año se inició la Segunda Guerra Mundial?
+122,Sociales,9,¿Cuáles eran los dos bandos en la Segunda Guerra Mundial?
+123,Sociales,9,¿Quién ganó la Segunda Guerra Mundial?
+124,Naturales,9,¿Qué es la generación espontánea?
+125,Naturales,9,Darwin tiene la teoría de ... relacionada con aves
+126,Naturales,9,¿Dónde se genera el ADN?
+127,Naturales,9,¿Qué significan las siglas ARN?
+128,Geografia,9,¿Cuál es el punto más alto de Colombia?
+129,Geografia,9,¿Con qué países limita Colombia al sur?
+130,Geografia,9,¿Qué país cercano fue parte de Colombia hasta hace 100 años?
+131,Geografia,9,¿En qué región se encuentra el Valle del Cauca?
+
+140,Naturales,10,¿Qué es H2O?
+141,Naturales,10,¿Qué es O2?
+142,Naturales,10,¿Qué es H2?
+143,Naturales,10,¿Qué es NaCl?
+152,Sociales,10,¿Qué es la Macroeconomía?
+153,Sociales,10,¿Qué es la Microeconomía?
+154,Sociales,10,¿Qué es un CDT?
+155,Sociales,10,¿Qué es un cheque?
+132,Matematicas,10,
+133,Matematicas,10,
+134,Matematicas,10,
+135,Matematicas,10,
+144,Español,10,
+145,Español,10,
+146,Español,10,
+147,Español,10,
+
+164,Naturales,11,¿Qué son los isótopos?
+165,Naturales,11,¿Cuál es el elemento fundamental de la química orgánica?
+166,Naturales,11,¿Qué elemento no está presente en la química inorgánica?
+167,Naturales,11,¿Qué es la hibridación?
+168,Español,11,¿Qué es un texto argumentativo?
+169,Español,11,¿Qúe es una tesis?
+170,Español,11,
+171,Español,11,
+172,Matematicas,11,
+173,Matematicas,11,
+174,Matematicas,11,
+175,Matematicas,11,
+176,Sociales,11,¿Qué es el capitalismo?
+177,Sociales,11,¿Qué es la globalización?
+178,Sociales,11,
+179,Sociales,11,
