@@ -5,7 +5,6 @@ import os
 app = Flask(__name__)
 
 app.secret_key = os.urandom(32)
-#aqui va algo que no entiendo jeje :D
 
 userData = [] #esta lista contendra los datos de los usuarios
 #este ciclo va a agregar a la variable userData los datos dentro del archivo
@@ -14,11 +13,12 @@ infoUser = [] #esta lista contendra la informacion de los usuarios.
 gradoPreguntas = [] #esta variable contendra las preguntas segun el grado del usuario.
 
 
-datos = open('datos_estudiantes.txt')
+datos = open('datos_usuarios.txt')
 for user in datos:
 	user = user.replace('\n','')
-	userData.append(user.split(,))
+	userData.append(user.split(','))
 datos.close()
+userData.pop(0)
 
 @app.route('/')
 def index(rol=None,username=None):
@@ -42,11 +42,11 @@ def admin(rol=None,username=None):
 	if session.get('logged_in'): #se abren las bases de datos de los usuarios
 		perfil = open('perfiles.txt','a') #se usa la opcion a porque el admin podra ingresar usuarios
 		#a este archivo.
-		file = open('datos_estudiantes.txt','a') #tambien se va a modificar este archivo ya que
+		file = open('datos_usuarios.txt','a') #tambien se va a modificar este archivo ya que
 		#contiene datos de los usuarios del juego
 
 		datosUsuarios = [] #esta lista tendra los datos de los usuarios
-		datosEstudiantes = open('datos_estudiantes.txt','r')
+		datosEstudiantes = open('datos_usuarios.txt','r')
 
 		for dato in datosEstudiantes:
 			dato = dato.replace('\n','')
@@ -74,7 +74,7 @@ def admin(rol=None,username=None):
 
 #inicio de sesion de usuarios
 @app.route('/login', methods=['POST'])
-def login(rol=None,username=):
+def login(rol=None,username=None):
 	"""
 	Esta funcion hace la validacion del inicio de sesion de los usuarios.
 	Ademas el ciclo que se efectua, valida si el usuario y la contrasena que se
@@ -107,7 +107,7 @@ def users(rol=None,username=None):
 	global infoUser,gradoPreguntas
 
 	if rol == 'Administrador' or rol == 'administrador':
-		return render_template('administrador.html',rol = rol,username = username)
+		return render_template('administrador.html',rol=rol,username=username)
 	else:
 		if rol == 'Estudiante' or rol == 'estudiante':
 			perfilData = []
@@ -128,7 +128,7 @@ def users(rol=None,username=None):
 					vidas = perfilData[i][7]
 					infoUser = perfilData[i]
 			obtenerPreguntasGrado(grado)
-			return render_template('estudiante.html',rol=rol,username=username,grado=grado,puntajeMatematicas=puntajeMatematicas,puntajeEspañol=puntajeEspañol,puntajeNaturales=puntajeNaturales,puntajeSociales=puntajeSociales,vidas=vidas,infoUser=infoUser)
+			return render_template('estudianteMenu.html',rol=rol,username=username,grado=grado,puntajeMatematicas=puntajeMatematicas,puntajeEspañol=puntajeEspañol,puntajeNaturales=puntajeNaturales,puntajeSociales=puntajeSociales,vidas=vidas,infoUser=infoUser)
 
 def obtenerPreguntasGrado(grado):
 	"""
@@ -179,11 +179,6 @@ def estudiante(rol=None,username=None,materias=None,grado=None):
 		puntajeSociales = infoUser[6]
 		vidas = infoUser[7]
 
-		for n in range(len(gradoPreguntas)):
-			gradoPreguntas[n].pop(0)
-			gradoPreguntas[n].pop(0)
-			gradoPreguntas[n].pop(0)
-
 		if materia == 'Matematicas' or materia == 'Español' or materia == 'Naturales' or materia == 'Sociales':
 			return render_template('estudiantesPreguntas.html',rol=rol,username=username,grado=grado,puntajeMatematicas=puntajeMatematicas,puntajeEspañol=puntajeEspañol,puntajeNaturales=puntajeNaturales,puntajeSociales=puntajeSociales,vidas=vidas,infoUser=infoUser,gradoPreguntas=gradoPreguntas)
 	else:
@@ -200,6 +195,7 @@ def logout():
 	session['logged_in'] = False
 	rol = None
 	username = None
+	gradoPreguntas = []
 	return index(rol,username)
 
 if __name__  == '__main__':

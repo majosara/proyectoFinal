@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% block body %}
+{% if session['logged_in'] == True %}
+<html>
+<head>
+	<title>Administrador</title>
+
+	<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+		body {background-color: #1E92FF;}
+		h1 {color: black;}
+		p {color: black;}
+		li {float: left;}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			/* Añade un borde gris a todos los items de la lista */
+			border-right: 1px solid #bbb;
+		}
+		/* Hace que el color del cuadrado sea negro */
+		li a:hover {
+			background-color: #111;
+		}
+		.active {
+			background-color: #1E92FF;
+		}
+		li:last-child {
+			border-right: none;
+		}
+		.stroke {
+		-webkit-text-fill-color: yellowgreen;
+		-webkit-text-stroke: 1px black;
+}
+	</style>
+
+</head>
+<body>
+	<ul>
+		<li><a class="active">Administrador</a></li>
+		<li style="float: right;"><a class="active" href='/logout'>Cerrar Sesión</a></li>
+	</ul>
+
+	<link rel="stylesheet" href="/static/style.css" type="text/css">
+	<form action="/admin" method="POST">
+	    <div class="login">
+	        <div class="login-screen">
+	            <div class="app-title">
+	                <h1>Registro de Usuarios</h1>
+	            </div>
+	            
+	            <div class="login-form">
+	            	<div class="control-group">
+	                <!-- <input type="text" class="login-field" value="" placeholder="Rol" name="rolRegister"> -->
+
+                    <select name="rolRegister">
+                    	<option selected value="0">Elija un Rol</option>
+                        <option value="Administrador">Administrador</option>
+                        <option value="Estudiante">Estudiante</option>
+                    </select>
+
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+
+	                <div class="control-group">
+	                <input type="text" class="login-field" value="" placeholder="Nombre de Usuario" name="userRegister">
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+	                
+	                <div class="control-group">
+	                <input type="password" class="login-field" value="" placeholder="Contraseña" name="contraseñaRegister">
+	                <label class="login-field-icon fui-lock" for="login-pass"></label>
+	                </div>
+
+	                <div class="control-group">
+	                <input type="text" class="login-field" value="" placeholder="Correo Electronico" name="correoRegister">
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+
+	                <div class="control-group">
+	                <input type="text" class="login-field" value="" placeholder="Edad" name="edadRegister">
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+
+	                <div class="control-group">
+	                <!-- <input type="text" class="login-field" value="" placeholder="Grado" name="gradoRegister"> -->
+                    <select name="gradoRegister">
+                    	<option selected value="0">Elija un Grado</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                    </select>
+	                <label class="login-field-icon fui-user" for="login-name"></label>
+	                </div>
+                    
+	        <input type="submit" value="Registrar" class="btn btn-primary btn-large btn-lock">
+	                <br>
+	            </div>
+	        </div>
+	    </div>
+	</form>
+	{% else %}
+	<p>No te encuentras Logueado!</p>
+	{% endif %}
+	{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+rol,usuario,contrasena,id_usuario,correo,edad,grado
+Estudiante,robinquintero,4321,1,robin@mail.com,5,0
+Estudiante,duvervalencia,1234,2,duver@mail.com,17,11
+Estudiante,albertgarcia,5678,3,albert@mail.com,15,10
+Estudiante,jhonlondono,8765,4,jhon@mail.com,14,9
+Estudiante,estebanflorez,1011,5,esteban@mail.com,10,5
+Estudiante,juanpablo,4567,6,juanpablo@mail.com,12,7
+Administrador,maria,1234,7,maria@mail.com,17,0

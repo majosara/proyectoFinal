@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Who want's to be Graduated</title>
+	<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+		body {background-color: #7C449C;}
+		h1 {color: black;}
+		p {color: black;}
+		li {float: left;}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			/* Añade un borde gris a todos los items de la lista */
+			border-right: 1px solid #bbb;
+		}
+		/* Hace que el color del cuadrado sea negro */
+		li a:hover {
+			background-color: #111;
+		}
+		.active {
+			background-color: #1E92FF;
+		}
+		li:last-child {
+			border-right: none;
+		}
+		.stroke {
+		-webkit-text-fill-color: yellowgreen;
+		-webkit-text-stroke: 1px black;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a class="active">Bienvenido(a) {{ username }} a Check You!</a></li>
+		<li><a>grado: {{ grado }}</a></li>
+		<li><a class="active">Puntajes:</a></li>
+		<li><a>Matematicas: {{ puntajeMatematicas }}</a></li>
+		<li><a>Español: {{ puntajeEspañol }}</a></li>
+		<li><a>Naturales: {{ puntajeNaturales }}</a></li>
+		<li><a>Sociales: {{ puntajeSociales }}</a></li>
+		<li><a>vidas: {{ vidas }}</a></li>
+        <!--<li><a>infoUser: {{ infoUser }}</a></li>-->
+		<li style="float: right;"><a href="/logout" class="active">Salir</a></li>
+	</ul>
+	<!--{{ gradoPreguntas }}-->
+	<link rel="stylesheet" href="/static/style.css" type="text/css">
+	<form action="/estudiante/{{rol}}/{{username}}/{{grado}}/{{infoUsuario}}" method="POST">
+	    <div class="Menu">
+	        <div class="login-screen">
+	        	<div class="app-title">
+	                <h1>Selección de materias</h1>
+	            </div>
+	            <div class="login-form">
+	            	<div class="control-group">
+	                <!-- <input type="text" class="login-field" value="" placeholder="Rol" name="rolRegister"> -->
+
+                    <!--<input list="materias" type="text" class="login-field" value="" name="materias">
+                    <datalist id="materias">
+                        <option value="Matematicas">Matematicas</option>
+                        <option value="Español">Español</option>
+                        <option value="Ingles">Ingles</option>
+                        <option value="Sociales">Sociales</option>
+                    </datalist>-->
+                    <select name="materias">
+                    	<option selected value="None">Elija una materia</option>
+                    	<option value="Matematicas">Matematicas</option>
+                        <option value="Español">Español</option>
+                        <option value="Naturales">Naturales</option>
+                        <option value="Sociales">Sociales</option>
+                    </select>
+                    <br>
+	        <input type="submit" value="Seleccionar" class="btn btn-primary btn-large btn-lock">
+	                <br>
+	            </div>
+	        </div>
+	    </div>
+	</form>
+</body>
+</html>
