@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Who want's to be Graduated</title>
+	<title>Check You!</title>
 	<style>
 		div#test{border:#000 1px solid;padding: 10px 40px 40px 40px;}
 		ul {
@@ -40,22 +40,27 @@
 		}
 	</style>
 	<script>
+    //Constantes del sistema
+    const puntajeNecesario = 4;
+	//Variables con respecto al puntaje
+    var grado = "{{grado}}";
 	var materia = "{{materia}}";
 	var puntajeMatematicas = 0;
 	var puntajeEspañol = 0;
 	var puntajeNaturales = 0;
 	var puntajeSociales = 0;
+    var vidas = "{{vidas}}";
 
 	var pos = 0,test,test_status,question,choice,choices,chA,chB,chC,chD,correct = 0;
 
 	var gradoPreguntas = '{{gradoPreguntas}}';
 	var gradoPreguntasStr = gradoPreguntas.replace(/&#39;/g,'"');
 	//var gradoPreguntasArray = gradoPreguntasStr.replace(/&#34;/g,'"');
+	var questions = JSON.parse(gradoPreguntasStr);
+
 	var info = '{{infoUser}}';
 	var infoStr = info.replace(/&#39;/g,'"');
 	var infoUsuario = JSON.parse(infoStr);
-
-	var questions = JSON.parse(gradoPreguntasStr);
 
 	function _(x){
 		return document.getElementById(x);
@@ -65,18 +70,54 @@
 		test = _("test");
 		if(pos >= questions.length){
 			test.innerHTML = "<h2> Obtuviste " + correct + " de " + questions.length + "  preguntas correctas</h2>";
-			_("test_status").innerHTML = "Test completado"+"<br><br>";
-			test.innerHTML += "<li><a href='/users/{{rol}}/{{username}}/"+infoUsuario+"' class='active'>regresar menu</a></li>";
-			if (materia == "Matematicas"){
+			_("test_status").innerHTML = "Test completado";
+            if (materia == "Matematicas" && correct >= puntajeNecesario){
 				var puntajeMatematicas = {{puntajeMatematicas}} + correct;
 				infoUsuario.splice(3,1,puntajeMatematicas.toString());
-			} else if (materia == "Español") {
-				puntajeEspañol = {{puntajeEspañol}} + correct;
-			} else if (materia == "Naturales") {
+			}else if (materia == "Matematicas" && correct < puntajeNecesario){
+                var vidas = {{vidas}} - 1;
+                infoUsuario.splice(7,1,vidas.toString());
+            }
+            
+            else if (materia == "Español" && correct >= puntajeNecesario) {
+				var puntajeEspañol = {{puntajeEspañol}} + correct;
+                infoUsuario.splice(4,1,puntajeEspañol.toString());
+			}else if (materia == "Español" && correct < puntajeNecesario){
+                var vidas = {{vidas}} - 1;
+                infoUsuario.splice(7,1,vidas.toString());
+            }
+            
+            else if (materia == "Naturales" && correct >= puntajeNecesario) {
 				puntajeNaturales = {{puntajeNaturales}} + correct;
-			} else {
+                infoUsuario.splice(5,1,puntajeNaturales.toString());
+			}else if (materia == "Naturales" && correct < puntajeNecesario){
+                var vidas = {{vidas}} - 1;
+                infoUsuario.splice(7,1,vidas.toString());
+            }
+            else if (materia == "Sociales" && correct >= puntajeNecesario){
 				puntajeSociales = {{puntajeSociales}} + correct;
-			}
+                infoUsuario.splice(6,1,puntajeSociales.toString());
+			}else if (materia == "Sociales" && correct < puntajeNecesario){
+                var vidas = {{vidas}} - 1;
+                infoUsuario.splice(7,1,vidas.toString());
+            }else if (vidas <= 0 && grado <= 0){
+                var grado = {{grado}};
+                var vidas = 5;
+                infoUsuario.splice(2,1,grado.toString());
+                infoUsuario.splice(7,1,vidas.toString());
+                } else if (vidas <= 0){
+                var grado = {{grado}} - 1;
+                var vidas = 5;
+                infoUsuario.splice(2,1,grado.toString());
+                infoUsuario.splice(7,1,vidas.toString());
+            }
+            if ({{puntajeEspañol}} >= puntajeNecesario && {{puntajeMatematicas}} >= puntajeNecesario && {{puntajeNaturales}} >= puntajeNecesario &&{{puntajeSociales}} >= puntajeNecesario){
+                var grado = {{grado}} + 1;
+                var vidas = {{vidas}};
+                infoUsuario.splice(2,1,grado.toString());
+                infoUsuario.splice(7,1,vidas.toString());
+            }
+			test.innerHTML += "<li><a href='/users/{{rol}}/{{username}}/"+infoUsuario+"' class='active'>regresar menu</a></li>";
 			pos = 0;
 			correct=0;
 			return false; //detiene la funcion para que no se ejecute mas alla si llega al tope
@@ -129,7 +170,6 @@
 		<li style="float: right;"><a href="/logout" class="active">Salir</a></li>
 	</ul>
 
-	<!--{{ gradoPreguntas }}-->
 	<h2 id="test_status"></h2>
 	<div id="test"></div>
 </body>

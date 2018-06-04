@@ -1,15 +1,18 @@
-from flask import flask
+from flask import Flask
 from flask import render_template,request,session
 import os
 
 app = Flask(__name__)
 
-app.secret-key = os.random(32)
+app.secret_key = os.urandom(32)
 
-userData = []
+userData = [] #lista que contendra las bases de datos de los usuarios y servira para
+#validar la informacion de los usuarios
 infoUser = []
 gradoPreguntas = []
 
+#en el siguiente ciclo se agregara a userData la informacion de los usuarios
+#en las bases de datos
 lista = open('datos_usuarios.txt')
 for user in lista:
 	user = user.replace('\n','')
@@ -17,19 +20,31 @@ for user in lista:
 lista.close()
 
 @app.route('/')
-def index(rol = None, username = None):
+def index(rol=None,username=None):
+	"""
+	Esta funcion lleva al usuario que no ha iniciado sesion a la
+	pagina del login y si ha iniciado sesion lo llevara a la funcion
+	de usuarios.
+	"""
 	if not session.get('logged_in'):
 		return render_template('login.html')
 	else:
-		return users(rol,username)
+		return users(rol,username) #si inicio sesion se envia a users
 
+#registro de usuarios
 @app.route('/admin',methods=['POST'])
 def admin(rol=None,username=None):
-	if session.get('logged_in'):
-		perfil = open('perfiles.txt','a')
-		file = open('datos_usuarios.txt','a')
+	"""
+	Esta funcion verifica el rol del usuario que inicio sesion, en caso
+	que este rol sea administrador, se llama esta funcion.
+	"""
+	if session.get('logged_in'): #se abren las bases de datos de los usuarios
+		perfil = open('perfiles.txt','a') #se usa la opcion a porque el admin 
+		#podra ingresar usuarios a este archivo
+		file = open('datos_usuarios.txt','a') #tambien se va a modificar este archivo ya que
+		#contiene datos de los usuarios del juego
 
-		usersData = []
+		usersData = [] #esta lista tendra los datos de los usuarios
 		datosEstudiante = open('datos_usuarios.txt','r')
 
 		for linea in datosEstudiante:
@@ -38,9 +53,10 @@ def admin(rol=None,username=None):
 		datosEstudiante.close()
 
 		id_usuario = len(usersData) - 1
+
 		for i in range(len(usersData)):
-			if request.form['userRegister'] != userData[n][1]:
-				agregarUsers = request.form['rolRegister'] + ',' + request.form['userRegister'] + ',' + request.form['contraseñaRegister'] + ',' + ´str(id_usuario) + ',' + request.form['correoRegister'] + ',' + request.form['edadRegister'] + ',' + request.form['gradoRegister']
+			if request.form['userRegister'] != userData[i][1]:
+				agregarUsers = request.form['rolRegister'] + ',' + request.form['userRegister'] + ',' + request.form['contraseñaRegister'] + ',' + str(id_usuario) + ',' + request.form['correoRegister'] + ',' + request.form['edadRegister'] + ',' + request.form['gradoRegister']
 				agregarPerfil = str(id_usuario) + ',' + request.form['userRegister'] + ',' + request.form['gradoRegister'] + ',' + str(0) + ',' + str(0) + ',' + str(0) + ',' + str(0) + ',' + str(5)
 				perfil.write(agregarPerfil + '\n')
 				file.write(agregarUsers + '\n')
@@ -54,21 +70,38 @@ def admin(rol=None,username=None):
 		else:
 			return index()
 
+#inicio de sesion de usuarios
 @app.route('/login',methods=['POST'])
 def login(rol=None,username=None):
+	"""
+	Esta funcion hace la validacion del inicio de sesion de los usuarios.
+	Ademas el ciclo que se efectua, valida si el usuario y la contrasena que se
+	reciben en el input estan en la base de datos.
+	"""
 	global userData
+
 	for i in range(len(userData)):
+		""" si los datos que se ingresaron en el formulario estan en las bases de datos
+		entonces el sistema deja que inicie sesion y se toma la informacion(usuario y contrasena)"""
 		if request.form['username']==userData[i][1] and request.form['password']==userData[i][2]:
 			session['logged_in'] = True
 			rol = userData[i][0]
 			username = request.form['username']
+	#en caso de que se encuentre o no un usuario valido va a enviarlo a 'index'
 	if rol != None and username != None:
 		return index(rol,username)
 	else:
 		return index(rol,username)
 
+#ruta para los estudiantes que tiene estudiante como rol
 @app.route('/users/<rol>/<username>/<infoUsuario>')
 def users(rol=None,username=None,infoUsuario=None):
+	"""
+	Esta funcion comprueba el rol del usuario y lo lleva a su respectiva ruta.
+	En caso de encontrar que el rol es estudiante, define unas variables con sus 
+	datos, que estan almacenados en una variable que abre  archivo de texto que 
+	contiene los datos de los usuarios
+	"""
 	global infoUser,gradoPreguntas
 	if rol == 'Administrador':
 		return render_template('administrador.html',rol=rol,username=username)
@@ -88,23 +121,25 @@ def users(rol=None,username=None,infoUsuario=None):
 				infoUsuario = str(infoUsuario)
 				infoUsuario = infoUsuario.replace(" ","")
 				infoUsuario = infoUsuario.replace(",","")
+				#infoUsuario = infoUsuario.replace(",",'","')
+				#infoUsuario = infoUsuario.replace('"',"'")
 				infoUsuario = list(infoUsuario)
-				for i in range(len(infoUsuario)):
+				for n in range(len(infoUsuario)):
 					idUser = infoUsuario[0]
 					grado = infoUsuario[-6]
-					puntajeMatematicas = [-5]
-					puntajeEspañol = [-4]
-					puntajeNaturales = [-3]
-					puntajeSociales = [-2]
+					puntajeMatematicas = infoUsuario[-5]
+					puntajeEspañol = infoUsuario[-4]
+					puntajeNaturales = infoUsuario[-3]
+					puntajeSociales = infoUsuario[-2]
 					vidas = infoUsuario[-1]
 					infoUser = [idUser,username,grado,puntajeMatematicas,puntajeEspañol,puntajeNaturales,puntajeSociales,vidas]
-					newInfo = str(idUser) + ',' + username + ',' + grado + ',' + puntajeMatematicas + ',' + puntajeEspañol + ',' + puntajeNaturales + ',' + puntajeSociales + ',' + vidas
-					database = open('perfiles.txt','a')
-					database.write(newInfo + '\n')
+					newInfo = str(idUser) + "," + username + "," + grado + "," + puntajeMatematicas + "," + puntajeEspañol + "," + puntajeNaturales + "," + puntajeSociales + "," + vidas
+					database = open("perfiles.txt","a")
+					database.write(newInfo + "\n")
 					database.close()
 			else:
 				for i in range(len(perfilData)):
-					if perfilData[i][1]==username:
+					if perfilData[i][1] == username:
 						grado = perfilData[i][2]
 						puntajeMatematicas = perfilData[i][3]
 						puntajeEspañol = perfilData[i][4]
@@ -113,14 +148,19 @@ def users(rol=None,username=None,infoUsuario=None):
 						vidas = perfilData[i][7]
 						infoUser = perfilData[i]
 			obtenerPreguntasGrado(grado)
-			return render_template('estudianteMenu.html',rol=rol,username=username,grado=grado,puntajeMatematicas=puntajeMatematicas,puntajeEspañol=puntajeEspañol,puntajeNaturales=puntajeNaturales,puntajeSociales=puntajeSociales,vidas=vidas,infoUser=infoUser)
+			return render_template('estudianteMenu.html',rol=rol,username=username,grado=grado,puntajeMatematicas=puntajeMatematicas,puntajeEspañol=puntajeEspañol,puntajeNaturales=puntajeNaturales,puntajeSociales=puntajeSociales,vidas=vidas,infoUser=infoUser,gradoPreguntas=gradoPreguntas,infoUsuario=infoUsuario)
 
 def obtenerPreguntasGrado(grado):
+	"""
+	Esta funcion mete las preguntas que estan en las bases de datos en una lista,
+	luego va a ponerlas en una lista que contendra las preguntas segun el grado
+	del usuario.
+	"""
 	global gradoPreguntas
 
 	preguntas = []
 
-	todasPreguntas = open('preguntas.txt')
+	todasPreguntas = open('preguntas.txt',encoding='utf8')
 	for linea in todasPreguntas:
 		linea = linea.replace('\n','')
 		preguntas.append(linea.split(','))
@@ -136,10 +176,17 @@ def obtenerPreguntasGrado(grado):
 		gradoPreguntas[n].pop(0)
 		gradoPreguntas[n].pop(0)
 
+@app.route('/estudiante/<rol>/<username>/<grado>/<infoUsuario>', methods=['POST'])
 def estudiante(rol=None,username=None,materias=None,grado=None,infoUsuario=None):
-	global infoUser,gradoPreguntas
+	"""
+	Esta funcion verifica si el usuario que ha iniciado sesion es estudiante y lo lleva
+	a el menu donde respondera las preguntas.
+	"""
+	global infoUser,gradoPreguntass
 
 	if session.get('logged_in'):
+		##El código va a verificar que el usuario ya selecciono una materia del menú que 
+		#se mostrará en pantalla, después, va a retornar el script con las preguntas.
 		session['logged_in'] = True
 
 		materia = request.form['materias']
@@ -153,12 +200,16 @@ def estudiante(rol=None,username=None,materias=None,grado=None,infoUsuario=None)
 
 		if materia == 'Matematicas' or materia == 'Español' or materia == 'Naturales' or materia == 'Sociales':
 			return render_template('estudiantePreguntas.html',rol=rol,username=username,grado=grado,puntajeMatematicas=puntajeMatematicas,puntajeEspañol=puntajeEspañol,puntajeNaturales=puntajeNaturales,puntajeSociales=puntajeSociales,vidas=vidas,infoUser=infoUser,gradoPreguntas=gradoPreguntas,materia=materia,infoUsuario=infoUsuario)
+		elif materia == "0":
+			return render_template('estudianteMenu.html',rol=rol,username=username,grado=grado,puntajeMatematicas=puntajeMatematicas,puntajeEspañol=puntajeEspañol,puntajeNaturales=puntajeNaturales,puntajeSociales=puntajeSociales,vidas=vidas,infoUser=infoUser,gradoPreguntas=gradoPreguntas,infoUsuario=infoUsuario)
 	else:
 		return index()
 
-
 @app.route('/logout')
 def logout():
+	"""
+	Esta funcion cierra la sesion del usuario que este en ese momento en sesion
+	"""
 	app.secret_key = os.urandom(32)
 	session['logged_in'] = False
 	rol = None
